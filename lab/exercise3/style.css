@@ -79,7 +79,8 @@ h4{
 .description{
     font-family: 'Roboto', sans-serif;
     color: #00004d;
-    font-size:30px;
+    font-size:28px;
+    line-height: 40px;
     border: 4px dotted navy;
     padding-right: 80px;
     padding-bottom:60px;
