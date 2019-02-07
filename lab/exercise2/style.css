@@ -22,3 +22,14 @@ audio{
     position: right;
     align-items: right;
 }
+.box {
+  background-color: #FF7F50;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
