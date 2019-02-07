@@ -1,0 +1,24 @@
+body{
+    background-color: #f6f6f6;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom:40px;
+    padding-top: 10px;
+    font-style: bold;
+    background-color: #8cb3d9;
+}
+video {
+    position: center;
+  width: 75%;
+  height: auto;
+    padding-right: 20px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+audio{
+    padding-bottom:100px;
+    padding-top: 10px;
+    position: right;
+    align-items: right;
+}

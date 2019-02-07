@@ -1,17 +1,20 @@
-.body{
+body{
    font-family: 'Noto Serif SC', serif;
+   background-color: #d1e0e0;
 }
 div.a {
   text-align: left;
-  color: #4d0000;
+  color: #660000;
  font-family: 'Noto Serif SC', serif;
+ font-size:;
+ padding-left: 40px;
 }
 h1{
-	font-size:20px;
+	font-size:25px;
 	padding-right: 10px;
     padding-bottom: 0px;
     padding-left: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-top: 0px;
     font-weight: normal;
 
@@ -19,6 +22,7 @@ h1{
 h2{
     text-align: right;
     font-weight: normal;
+    padding-right: 30px;
 }
 h6{
     text-align: left;
@@ -29,13 +33,36 @@ h6{
 }
 div.b{
   text-align: left;
-    padding-right: 10px;
+    padding-right: 30px;
     padding-bottom: 0px;
     padding-left: 200px;
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #2d5986;
+    color: #002266;
     font-family: 'Noto Serif SC', serif;
+}
+div.g{
+    font-size: 26px;
+    color: #002266;
+    font-family: 'Noto Serif SC', serif;
+    text-align: left;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 520px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+div.h{
+    font-size: 40px;
+    color: #002266;
+    font-family: 'Noto Serif SC', serif;
+    text-align: left;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 520px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bolder;
 }
 h4{
     font-size: 40px;
@@ -50,28 +77,37 @@ h5{
     text-align: right;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
 div.c{
 	text-align: right;
-    color: #004d4d;
+    color: #5c8a8a;
     font-family: 'Noto Serif SC', serif;
+    margin-bottom: 80px;
+    margin-top: 10px;
+    padding-right: 30px;
 }
 div.d{
-color: #cc7a00;
+color: #b35900;
 font-family: 'Noto Serif SC', serif;
 }
 h3{
     text-align: center;
     font-weight: normal;
-    margin-bottom: 0px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 div.e{
+    font-size: 18px;
     text-align: left;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 200px;
-    color:  #a3a3c2;
+    color:  #004d00;
+     margin-bottom: 20px;
+    margin-top: 10px;
 }
 span.f{
     padding-right: 0px;
@@ -80,4 +116,7 @@ span.f{
     font-size: 13px;
     color: #000000
 
+}
+strong{
+    font-weight:900; 
 }
