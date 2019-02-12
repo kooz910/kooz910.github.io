@@ -2,9 +2,37 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <title>Exercise 3</title>
+  <title>Exercise 3: Layers</title>
 </head>
 <body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <li><a href="https://kooz910.github.io/">Home</a></li>
+  <li><a href="#">About</a></li>
+ <li class="dropdown">
+	  <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="https://kooz910.github.io/Project1/index.html">Project 1</a>
+      <a href="/">Project 2</a>
+      <a href="/">Project 3</a>
+      <a href="/">Project 4</a>
+      <a href="/">Project 5</a>
+    </div></li>
+    <li class="dropdown">
+	 <a href="javascript:void(0)" class="dropbtn">Lab</a>
+     <div class="dropdown-content">
+      <a href="https://kooz910.github.io/html-quiz"> Html-quiz</a>
+      <a href="https://kooz910.github.io/lab/exercise2/index.html">Exercise 2</a>
+      <a href="https://kooz910.github.io/lab/exercise3/index.html">Exercise 3</a>
+      <a href="/">Exercise 3</a>
+      <a href="/">Exercise 4</a>
+      <a href="/">Exercise 5</a>
+	</li>
+	</li>
+	</ul>
+</div>
+<span onclick="openNav()">MENU</span>
+<div id="main">
   <h1>Viennois</h1>
 <div class="row1">
 <h2> Whipped Cream 60ml</h2></div>
@@ -14,5 +42,14 @@
 <h4> Espresso 60ml</h4></div>
 <div class="description">
 Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top.</div>
+</div>
+<script>function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}</script>
 </body>
 </html>
