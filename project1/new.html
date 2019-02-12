@@ -5,8 +5,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style2.css">	
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://kooz910.github.io/index.html">Home</a>
+  <a href="https://www.youtube.com/watch?v=1WPt0zoP0KI&list=PL5A4nPQbUF8BujvJMHLY7dzuBxidZuCKi&index=2<?">Clip</a>
+  <a href="https://kooz910.github.io/project1/title.html">Project 1</a>
+  <a href="https://kooz910.github.io/project1/old.html">Version 1</a>
+  <a href="https://kooz910.github.io/project1/new.html">Version 2</a>
+</div>
+<span style="font-size:30px;cursor:pointer; color: #8cb3d9" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<br>
 <br>
 <div class="a"><div>Tony Marston was young and strong.</div>
 <div>He didn't die from some stimulant.</div>

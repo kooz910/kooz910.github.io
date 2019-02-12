@@ -2,7 +2,7 @@ body{
    background-color: #d1e0e0;
    padding-left: 50px;
    padding-right:50px;
-   padding-top:50px;
+   padding-top:30px;
 }
 div.a {
   text-align: left;
@@ -11,6 +11,7 @@ div.a {
  font-size:25px;
  padding-left: 40px;
  line-height: 45px;
+margin top: 50px;
 }
 h1{
 	font-size:40px;
@@ -162,3 +163,41 @@ strong{
     font-size: 30px;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9fbfdf;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #060d13;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #9fbfdf;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
