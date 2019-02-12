@@ -1,0 +1,121 @@
+<html la<!DOCTYPE html>
+<head>
+<title> Project 1: Version 2</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+body{
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top:50px ;
+	padding-bottom:100px ;
+	background-color: #132639;
+	font-style:'Tinos', serif;
+}
+.box {
+  background-color: #9fbfdf;
+  color: white;
+  padding: 4px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-right: 20px;
+  text-align: center;
+}
+h1{
+	font-style: 'Abril Fatface', cursive; 
+	font-size: 100px;
+	font-weight: 200px;
+	text-align: center;
+	padding-bottom:50px;
+	padding-top:50px;
+	color: #a3c2c2;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://kooz910.github.io/index.html">Home</a>
+  <a href="https://kooz910.github.io/project1/title.html">Project 1</a>
+  <a href="https://kooz910.github.io/project1/old.html">Version 1</a>
+  <a href="https://kooz910.github.io/project1/new.html">Version 2</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<h1>And Then<div>There Were None</div></h1>
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<div class="box" style="float:left;">
+  <button class="box"><a href="https://www.youtube.com/watch?v=1WPt0zoP0KI&list=PL5A4nPQbUF8BujvJMHLY7dzuBxidZuCKi&index=2<?" style="text-decoration:none"><b>View Clip</b></a></button>
+  <div class="box-content">
+  </div>
+
+</body>
+</html>
