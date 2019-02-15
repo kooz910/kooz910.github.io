@@ -1,6 +1,9 @@
 body{
   font-family: 'Comfortaa', cursive;
-  padding: 50px;
+  padding top: 20px;
+  padding-left:20px;
+  padding-right:50px; 
+  padding-left:50px;
   }
  div.c{
  	line-height: 24px;
