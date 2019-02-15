@@ -1,0 +1,26 @@
+body{
+  font-family: 'Comfortaa', cursive;
+  padding: 50px;
+  }
+ div.c{
+ 	line-height: 24px;
+ }
+h1{
+  font-family: 'Fredoka One', cursive;
+  font size: 300px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+h2{
+  font-family: 'Fredoka One', cursive;
+  font size:20px;
+  padding-top: 20px;
+  padding-bottom:0px; 
+  margin-bottom: 5px;
+}
+div.a{
+	line-height: 25px;
+}
+div.b{
+	line-height: 28px;
+}
