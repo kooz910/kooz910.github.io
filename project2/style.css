@@ -3,6 +3,7 @@ body{
   padding-bottom:50px;
   padding-right:50px; 
   padding-left:50px;
+  background-color: #b3e6ff;
   }
  
 h1{
@@ -12,6 +13,7 @@ h1{
   padding-bottom:10px; 
   margin-bottom: 0px;
   text-align: right;
+  color: #df80ff;
 } 
 div.a{
 	line-height: 40px;
@@ -19,6 +21,7 @@ div.a{
   padding-left: 50px;
   padding-top:20px;
   font-family: 'Comfortaa', cursive;
+  color: #e699ff;
 
 }
   .sidenav {
