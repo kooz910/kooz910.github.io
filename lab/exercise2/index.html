@@ -1,17 +1,55 @@
 <html la<!DOCTYPE html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="simple-grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercise 2</title>
 </head>
 <body>
-  <audio controls loop>
+	<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://kooz910.github.io/index.html">Home</a>
+</div>
+<span style="font-size:30px;cursor:pointer; color: black" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<p>
+ <audio controls loop>
   <source src="audio.ogg" type="audio/ogg">
-  <source src="audio.mp3" type="audio/mpeg"></audio>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kx4A4RTzyXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+</p>
+<p><div class="a">
+	<div class="flip-box1">
+  <div class="flip-box-inner1">
+    <div class="flip-box-front1">
+    <div class="b"><audio controls loop>
+  <source src="ten.ogg" type="audio/ogg">
+  <source src="ten.mp3" type="audio/mpeg">
+  </audio></div>
+    </div>
+    <div class="flip-box-back1">
+      <img src="poem.jpg"></iframe>
+    </div>
+</div></div></div></p>
 
-
+<p><div class="square"></div>
+	<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="none.jpg">
+    </div>
+    <div class="flip-box-back">
+      <iframe width="660" height="360" src="https://www.youtube.com/embed/kx4A4RTzyXQ?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div></div></p>
+   
+<footer><footer>
 </body>
 </html>

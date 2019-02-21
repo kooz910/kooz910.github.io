@@ -1,0 +1,186 @@
+<html la<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title> Ingredients</title>
+</head>
+<style> 
+
+body{
+  padding-top: 50px;
+  padding-bottom:0px;
+  padding-right: 50px; 
+  padding-left:50px;
+  }
+div.a{
+  line-height: 32px;
+  font-size: 20px;
+  padding-top:20px; 
+  padding-left: 80px;
+  font-family: 'Comfortaa', cursive;
+  padding-bottom: 0px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color:black ;
+}
+.container:hover input ~ .checkmark {
+    background-color: black;
+}
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 10px;
+    top: 4px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.box {
+  background-color: black;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size:100px;
+  padding-top:3px;
+  padding-bottom:0px;
+  text-align: right;
+}
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://kooz910.github.io/index.html">Home</a>
+    <a href="https://kooz910.github.io/project2/title.html">Version 1</a>
+    <a href="">Version 2</a>
+</div>
+<span style="font-size:30px;cursor:pointer; color: black" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="a">
+  <p><label class="container">Cream Cheese 350g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Sugar 100g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Sour Cream 145g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Unsalted Butter 37g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">A Vanilla Stick 1/3
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Whole egg 90g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Egg York 30g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+  <p><label class="container">Corn Starch 11g
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label></p>
+</div>
+<h1>Ingredients</h1></body>
+</html>

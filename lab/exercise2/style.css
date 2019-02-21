@@ -1,12 +1,11 @@
 body{
-    background-color: #f6f6f6;
     font-family: 'Roboto', sans-serif;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom:40px;
-    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     font-style: bold;
-    background-color: #8cb3d9;
+    background-color: #669999;
 }
 video {
     position: center;
@@ -14,13 +13,22 @@ video {
   height: auto;
     padding-right: 20px;
     padding-left: 100px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 audio{
-    padding-bottom:100px;
     padding-top: 10px;
-    position: right;
-    align-items: right;
+    padding-left: 60px;
+    margin-bottom: 0px;
+    margin-top: -65px;
+    position: absolute;
+    align-items: absolute;
+}
+div.b{
+    padding-top: 750px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    margin-top: -65px;
+    position: center;
 }
 .box {
   background-color: #FF7F50;
@@ -32,4 +40,126 @@ audio{
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+}
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+flip-box {
+  background-color: transparent;
+  width: 660px;
+  height: 415px;
+}
+
+.flip-box-inner {
+  position: center;
+  width:660px;
+  height: 360px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.flip-box-back {
+  background-color: ;
+  transform: rotateY(180deg);
+}
+* {
+  box-sizing: border-box;
+}
+.square
+{
+  padding-top:310px;
+}
+div.a{
+  position: absolute;
+  padding-left: 740px;
+  margin-top: -55px;
+
+}
+flip-box1 {
+  background-color: transparent;
+  width: 660px;
+  height: 415px;
+}
+
+.flip-box-inner1 {
+  position: relative;
+  width:530px;
+  height: 720px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.flip-box-front1{
+ background-color:#a3c2c2;
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+* {
+  box-sizing: border-box;
 }
