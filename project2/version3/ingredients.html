@@ -9,19 +9,19 @@
 
 body{
   padding-top: 50px;
-  padding-bottom:0px;
+  padding-bottom:50px;
   padding-right: 50px; 
   padding-left:50px;
-  background-color: #ffcccc;
+  background-color: #e6ffe6;
   }
 div.a{
   line-height: 32px;
-  font-size: 20px;
+  font-size: 25px;
   padding-top:20px; 
   padding-left: 80px;
   font-family: 'Comfortaa', cursive;
   padding-bottom: 0px;
-  color: #b3b3b3;
+  color: #006699;
 }
 .container {
     display: block;
@@ -48,13 +48,13 @@ div.a{
     left: 0;
     height: 30px;
     width: 30px;
-    background-color:#808080 ;
+    background-color: #008040 ;
 }
 .container:hover input ~ .checkmark {
-    background-color: #808080;
+    background-color:  #008040;
 }
 .container input:checked ~ .checkmark {
-    background-color: #808080;
+    background-color:  #008040;
 }
 
 .checkmark:after {
@@ -89,11 +89,29 @@ div.a{
 }
 h1{
   font-family: 'Fredoka One', cursive;
-  font-size:100px;
+  font-size:140px;
   padding-top:3px;
   padding-bottom:0px;
-  text-align: right;
-  color: #808080;
+  line-height: 32px;
+  color: #9fdf9f;
+}
+div.b{
+  position: absolute;
+  margin-top: 300px;
+  padding-left: 470px;
+}
+h3{
+  font-family: 'Fredoka One', cursive;
+  font-size:140px;
+  padding-top:3px;
+  padding-bottom:0px;
+  line-height: 0px;
+ color:#006666;
+}
+div.c{
+  position: absolute;
+  margin-top: 280px;
+  padding-left: 470px;
 }
   .sidenav {
   height: 100%;
@@ -102,7 +120,7 @@ h1{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #006bb3;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 100px;
@@ -134,15 +152,34 @@ h1{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: #006bb3;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -540px;
+  margin-left:1100px;
+  text-align: center;
+font-family: 'Fredoka One', cursive;
+}
 </style>
 <body>
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="https://kooz910.github.io/index.html">Home</a>
-    <a href="https://kooz910.github.io/project2/title.html">Version 1</a>
-    <a href="">Version 2</a>
+    <a href="https://kooz910.github.io/project2/version1/title.html">Version 1</a>
+    <a href="https://kooz910.github.io/project2/version2/title.html">Version 2</a>
+    <a href="https://kooz910.github.io/project3/version3/title.html">Version 3</a>
 </div>
-<span style="font-size:30px;cursor:pointer; color: #808080" onclick="openNav()">&#9776; </span>
+<span style="font-size:30px;cursor:pointer; color: #006bb3" onclick="openNav()">&#9776;</span>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -151,6 +188,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<div class="b"><h1>Ingredients</h1></div>
+<div class="c"><h3>Ingredients</h3></div>
 <div class="a">
   <p><label class="container">Cream Cheese 350g
     <input type="checkbox">
@@ -183,8 +222,7 @@ function closeNav() {
   <p><label class="container">Corn Starch 11g
     <input type="checkbox">
     <span class="checkmark"></span>
-  </label></p>
-</div>
-<a href="https://kooz910.github.io/project2/index.html"style="text-decoration:none;color: #0d1a26"><h1>Ingredients</h1></a>
+  </label></p></div>
+<button class="circle"; style="color: #0d1a26"><a href="https://kooz910.github.io/project2/version2/index.html"style="text-decoration:none;color: #ffcc99">Steps</a></button></div>
 </body>
 </html>
