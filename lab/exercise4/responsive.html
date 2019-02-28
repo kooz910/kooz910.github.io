@@ -1,12 +1,20 @@
 <html la<!DOCTYPE html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
+
   <title>Exercise 4: Type Collection</title>
 </head>
 <style>
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 50px;
+    padding-left: 90px;
+    padding-bottom:50px;
+    padding-top: 70px;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -46,6 +54,40 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+#uppercase-A {
+  width:40vw;
+  height:50vh;
+  position: relative;
+
+}
+.triangle1 {
+  width:0;
+  height:0;
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 70vh solid black;
+
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 7.2vw solid transparent;
+  border-right: 7.2vw solid transparent;
+  border-bottom: 23vh solid white;
+  position: absolute; 
+  left: 13vw;
+  top: 47.2vh;
+}
+.circle{
+  height: 12vh;
+  width: 12vw;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 14vw;
+  top: 55vh;
+}
 </style>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -67,12 +109,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<br>
-<div id="number-5">
-<div class="rectangle5"></div>
-<div class="rectangle6"></div>
-<div class="circle4"></div>
+<div id="uppercase-A">
+  <div class="triangle1"></div>
+   <div class="triangle2"></div>
+    <div class="circle"></div>
 </div>
-
 </body>
 </html>

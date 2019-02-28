@@ -45,95 +45,18 @@ body{
 }
 
 
-#uppercase-A {
-  width:400px;
-  height:500px;
-  position: relative;
-
-}
-.triangle1 {
-  width:0;
-  height:0;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-bottom: 500px solid black;
-
-}
-.triangle2 {
-  width: 0;
-  height: 0;
-  border-left: 72px solid transparent;
-  border-right: 72px solid transparent;
-  border-bottom: 230px solid white;
-  position: absolute; 
-  left: 130px;
-  top: 272px;
-}
-.circle {
-  height:  140px;
-  width: 140px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  left: 130px;
-  top: 350px;
-}
-
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  width:400px;
-}
-
-#uppercase-T {
-  width:400px;
-  height:500px;
-  position: relative;
-}
-.circle2 {
-  height: 150px;
-  width: 150px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-}
-.rectangle1 {
-  height: 140px;
-  width: 250px;
-  background-color: black;
-  position: absolute;
-  left: 150px;
-  top: 0px;
-}
-.rectangle2 {
-  height: 470px;
-  width: 140px;
-  background-color: black;
-  position: absolute;
-  left: 150px;
-  top: 30px;
-}
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  width:400px;
-}
-
 #uppercase-K {
   width:400px;
   height:500px;
   position: relative;
+  padding-left: 50px;
 }
 .rectangle3 {
   height: 500px;
   width: 140px;
   background-color: black;
   position: absolute;
-  left: 10px;
+  left: 60px;
   top: 0px;
 }
 .rectangle4 {
@@ -142,7 +65,7 @@ pre code {
   transform: rotate(-45deg);
   background-color: black;
   position: absolute;
-  left: 155px;
+  left: 205px;
   top: 150px;
 }
 .circle3 {
@@ -150,53 +73,7 @@ pre code {
   width: 180px;
   background-color: black;
   border-radius: 50%;
-  left: 220px;
+  left: 270px;
   top: 0px;
   position: absolute;
-}
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  width:400px;
-}
-
-#number-5 {
-  width:400px;
-  height:500px;
-  position: relative;
-}
-.rectangle5 {
-  height: 140px;
-  width: 260px;
-  background-color: black;
-  position: absolute;
-  left: 100px;
-  top: 0px;
-}
-.rectangle6 {
-  height: 295px;
-  width: 140px;
-  background-color: black;
-  transform: rotate(13deg);
-  position: absolute;
-  left: 65px;
-  top: 12px;
-}
-.circle4 {
-  height: 355px;
-  width: 355px;
-  background-color: black;
-  border-radius: 50%;
-  left: 31px;
-  top: 145px;
-  position: absolute;
-}
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  width:400px;
 }

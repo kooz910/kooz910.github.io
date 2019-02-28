@@ -1,0 +1,275 @@
+<html la<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
+  <title>Exercise 4: Type Collection</title>
+</head>
+<style>body{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom:50px;
+    padding-top: 50px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9fbfdf;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #060d13;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #9fbfdf;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#uppercase-A {
+  width:40vh;
+  height:50vh;
+  position: relative;
+
+}
+.triangle1 {
+  width:0;
+  height:0;
+  border-left: 20vh solid transparent;
+  border-right: 20vh solid transparent;
+  border-bottom: 50vh solid black;
+
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 7.2vh solid transparent;
+  border-right: 7.2vh solid transparent;
+  border-bottom: 23vh solid white;
+  position: absolute; 
+  left: 20vh;
+  top: 27.2vh;
+}
+.circle {
+  height:  14vh;
+  width: 14vh;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 20vh;
+  top: 35vh;
+}
+
+#uppercase-T {
+  width:40vh;
+  height:50vh;
+  position: relative;
+}
+.circle2 {
+  height: 15vh;
+  width: 15vh;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+.rectangle1 {
+  height: 14vh;
+  width: 25vh;
+  background-color: black;
+  position: absolute;
+  left: 15vh;
+  top: 0vh;
+}
+.rectangle2 {
+  height: 47vh;
+  width: 14vh;
+  background-color: black;
+  position: absolute;
+  left: 15vh;
+  top: 0vh;
+}
+#uppercase-K{
+  width:40vh;
+  height:50vh;
+  position: relative;
+}
+.rectangle3 {
+  height: 50vh;
+  width: 14vh;
+  background-color: black;
+  position: absolute;
+  left: 1vh;
+  top: 0vh;
+}
+.rectangle4 {
+  height: 35vh;
+  width: 14vh;
+  transform: rotate(-45deg);
+  background-color: black;
+  position: absolute;
+  left: 15.5vh;
+  top: 15vh;
+}
+.circle3 {
+  height: 18vh;
+  width: 18vh;
+  background-color: black;
+  border-radius: 50%;
+  left: 22vh;
+  top: 0vh;
+  position: absolute;
+}
+
+#number-5 {
+  width:40vh;
+  height:50vh;
+  position: relative;
+}
+.rectangle5 {
+  height: 14vh;
+  width: 26vh;
+  background-color: black;
+  position: absolute;
+  left: 10vh;
+  top: 0vh;
+}
+.rectangle6 {
+  height: 29.5vh;
+  width: 14vh;
+  background-color: black;
+  transform: rotate(13deg);
+  position: absolute;
+  left: 6.5vh;
+  top: 1.2vh;
+}
+.circle4 {
+  height: 35.5vh;
+  width: 35.5vh;
+  background-color: black;
+  border-radius: 50%;
+  left: 3.1vh;
+  top: 14.5vh;
+  position: absolute;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 20vh;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://kooz910.github.io/index.html">Home</a>
+    <a href="https://kkooz910.github.io/lab/exercise4/responsive.html">Responsive</a>
+    <a href="https:// kooz910.github.io/lab/exercise4/title.html">Repeatable</a>
+    <a href="https://kooz910.github.io/lab/exercise4/index.html">Alphabet A</a>
+    <a href="https://kooz910.github.io/lab/exercise4/index1.html">Alphabet T</a>
+    <a href="https://kooz910.github.io/project2/version2/index2.html">Alphabet K</a>
+      <a href="https://kooz910.github.io/project2/version2/index3.html">Alphabet 5</a>  
+</div>
+<span style="font-size:30px;cursor:pointer; color: #black" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<p></p>
+<div class="grid">
+  <div class="column">
+<div id="uppercase-A">
+  <div class="triangle1"></div>
+  <div <div class="triangle2"></div>
+  <div class="circle"></div></div>
+</div>
+<div class="column">
+<div id="uppercase-T">
+  <div class="circle2"></div>
+  <div class="rectangle1"></div>
+  <div class="rectangle2"></div>
+</div>
+</div>
+<div class="column">
+  <div id="number-5">
+<div class="rectangle5"></div>
+<div class="rectangle6"></div>
+<div class="circle4"></div>
+</div></div>
+<div class="column">
+<div id="uppercase-K">
+  <div class="rectangle3"></div>
+  <div class="rectangle4"></div>
+  <div class="circle3"></div>
+</div></div>
+</div>
+</body>
+</html>

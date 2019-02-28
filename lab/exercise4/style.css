@@ -49,6 +49,7 @@ body{
   width:400px;
   height:500px;
   position: relative;
+  padding-left: 50px;
 
 }
 .triangle1 {
@@ -66,7 +67,7 @@ body{
   border-right: 72px solid transparent;
   border-bottom: 230px solid white;
   position: absolute; 
-  left: 130px;
+  left: 180px;
   top: 272px;
 }
 .circle {
@@ -75,7 +76,7 @@ body{
   background-color: black;
   border-radius: 50%;
   position: absolute;
-  left: 130px;
+  left: 180px;
   top: 350px;
 }
 
