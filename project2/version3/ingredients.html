@@ -6,22 +6,22 @@
   <title> Ingredients</title>
 </head>
 <style> 
-
 body{
-  padding-top: 50px;
-  padding-bottom:50px;
-  padding-right: 50px; 
-  padding-left:50px;
+  padding-left:3em;
+  padding-top:3em;
+  padding-right:3em;
+  padding-bottom:3em;
   background-color: #ffffff;
   }
 div.a{
+  position: absolute;
   line-height: 32px;
   font-size: 25px;
-  padding-top:20px; 
+  margin-top:-5em; 
   padding-left: 80px;
   font-family: 'Comfortaa', cursive;
   padding-bottom: 0px;
-  color: #006699;
+  color: #006bb3;
 }
 .container {
     display: block;
@@ -48,13 +48,13 @@ div.a{
     left: 0;
     height: 30px;
     width: 30px;
-    background-color: #008040 ;
+    background-color: #ff9900;
 }
 .container:hover input ~ .checkmark {
-    background-color:  #008040;
+    background-color:  #ff9900;
 }
 .container input:checked ~ .checkmark {
-    background-color:  #008040;
+    background-color:  #ff9900;
 }
 
 .checkmark:after {
@@ -93,11 +93,11 @@ h1{
   padding-top:3px;
   padding-bottom:0px;
   line-height: 32px;
-  color: #9fdf9f;
+  color: #ffeb99;
 }
 div.b{
   position: absolute;
-  margin-top: 300px;
+  margin-top: 180px;
   padding-left: 470px;
 }
 h3{
@@ -106,11 +106,11 @@ h3{
   padding-top:3px;
   padding-bottom:0px;
   line-height: 0px;
- color:#006666;
+ color:#ff9900;
 }
 div.c{
   position: absolute;
-  margin-top: 280px;
+  margin-top: 160px;
   padding-left: 470px;
 }
   .sidenav {
@@ -152,10 +152,86 @@ div.c{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.square {
+  height: 2.5em;
+  width: 7em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 10.5em;
+  margin-left: 0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 2.5em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -2.5em;
+  margin-left: 8em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 2.5em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -2.5em;
+  margin-left: 16.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -2.5em;
+  margin-left: 25em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+div.b{
+  position: absolute;
+  width: 20em;
+}
 .circle {
   height: 150px;
   width: 150px;
-  background-color: #006bb3;
+  background-color: #660033;
   border-radius: 50%;
   padding: 4px;
   font-size: 40px;
@@ -165,8 +241,8 @@ div.c{
   position: sticky;
   bottom: 0;
   margin-right: 0px;
-  margin-top: -480px;
-  margin-left:1100px;
+  margin-top: 0em;
+  margin-left:28em;
   text-align: center;
 font-family: 'Fredoka One', cursive;
 }
@@ -190,39 +266,43 @@ function closeNav() {
 </script>
 <div class="b"><h1>Ingredients</h1></div>
 <div class="c"><h3>Ingredients</h3></div>
+<div class="b"><button class="square";><a href="https://kooz910.github.io/project2/version3/title.html"style="text-decoration:none;color:#006bb3">Home</a></button>
+<button class="squarea";><a href="https://kooz910.github.io/project2/version3/index.html"style="text-decoration:none;color:#006bb3">Steps: Part A</a></button>
+<button class="squareb";><a href="https://kooz910.github.io/project2/version3/index1.html"style="text-decoration:none;color:#006bb3">Steps: Part B</a></button>
+<button class="squarec";><a href="https://kooz910.github.io/project2/version3/final.html"style="text-decoration:none;color:#006bb3">Final Product</a></button></div>
+<button class="circle"; style="color: #0d1a26"> <a href="https://kooz910.github.io/project2/version3/index.html"style="text-decoration:none;color: #ffcc99">Next</a></button></div>
 <div class="a">
-  <p><label class="container">Cream Cheese 350g
+  <p><label class="container">350g Cream Cheese
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Sugar 100g
+  <p><label class="container">100g Sugar 
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Sour Cream 145g
+  <p><label class="container">145g Sour Cream
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Unsalted Butter 37g
+  <p><label class="container">37g Unsalted Butter
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">A Vanilla Stick 1/3
+  <p><label class="container">⅓ A Vanilla Stick 
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Whole egg 90g
+  <p><label class="container">90g Whole egg 
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Egg York 30g
+  <p><label class="container">30g Egg York 
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p>
-  <p><label class="container">Corn Starch 11g
+  <p><label class="container">11g Corn Starch 
     <input type="checkbox">
     <span class="checkmark"></span>
   </label></p></div>
-<button class="circle"; style="color: ##660000"><a href="https://kooz910.github.io/project2/version3/index.html"style="text-decoration:none;color: #660000">Steps</a></button></div>
 </body>
 </html>

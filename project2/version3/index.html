@@ -7,55 +7,68 @@
 </head>
 <style>
 body{
-  padding-top: 50px;
-  padding-bottom:100px;
-  padding-right:50px; 
-  padding-left:50px;
+  padding-left:3em;
+  padding-top:3em;
+  padding-right:3em;
+  padding-bottom:3em;
   background-color: #ffffff;
   }
- 
-h1{
+h3{
   font-family: 'Fredoka One', cursive;
-  font-size:120px;
-  padding-top: 6px;
-  padding-bottom:10px; 
-  margin-bottom: 0px;
-  line-height: 12px;
-  text-align: right;
-} 
-div.c{
-  color: #b33c00;
-  position: absolute;
-  margin-top: -620px;
-  margin-left: 820px
+  font-size:5.9em;
+  padding-top:0px;
+  padding-bottom:0px;
+  line-height: 32px;
+  color: #ffeb99;
 }
 div.d{
-color:#ffaa80;
-position: absolute;
-margin-top: -630px;
-margin-left: 820px
+  position: absolute;
+  margin-top: -7.5em;
+ left: 10em;
+   right: 0em;
+     width: 40em;
+}
+
+h4{
+  font-family: 'Fredoka One', cursive;
+  font-size:5.9em;
+  padding-top:0px;
+  padding-bottom:0px;
+  line-height: 0px;
+ color:#ff9900;
+}
+div.c{
+  position: absolute;
+  margin-top: -6em;
+  left: 10em;
+  right: 0em;
+   width: 40em;
 }
 div.a{
-  padding-left: 50px;
-  padding-top:0px;
+  position: absolute;
+  padding-left: 2.2em;
+  padding-top:0em;
   padding-right:0px;
-  margin-top: 0px;
+  margin-top: 4em;
+  margin-bottom: 5em;
+  width: 0em;
 }
 div.b{
-  line-height: 40px;
-  font-size: 35px;
-  padding-left: 150px;
-  padding-top:30px;
-  padding-right: 550px;
-  margin-top: 0px;
+  line-height: 1.15em;
+  font-size: 1.8em;
+  padding-left: 4em;
+  padding-top:1.2em;
+  padding-right: 22em;
+  margin-top: .2px;
   font-family: 'Comfortaa', cursive;
-  color:#ff9966;
+  color:#006bb3;
+  width:18em;
 }
 h2{
   position: absolute;
   line-height: 0px;
   font-size: 38px;
-  padding-top:18px;
+  padding-top:14px;
   margin-left:-50px;
   margin-top: 0px;
   font-family: 'Fredoka One', cursive;
@@ -100,6 +113,78 @@ h2{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.square {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -2em;
+  margin-left: 40em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 1em;
+  margin-left:40em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 1em;
+  margin-left: 40em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 1em;
+  margin-left: 40em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
 .circle {
   height: 150px;
   width: 150px;
@@ -113,28 +198,14 @@ h2{
   position: sticky;
   bottom: 0;
   margin-right: 0px;
-  margin-top: -380px;
-  margin-left:910px;
+  margin-top: 2em;
+  margin-left:24.5em;
   text-align: center;
 font-family: 'Fredoka One', cursive;
 }
-.circle1 {
-  height: 150px;
-  width: 150px;
-  background-color: #006bb3;
-  border-radius: 50%;
-  padding: 4px;
-  font-size: 27px;
-  border: none;
-  cursor: pointer;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  margin-right: 0px;
-  margin-top: -180px;
-  margin-left:910px;
-  text-align: center;
-font-family: 'Fredoka One', cursive;
+div.z{
+  position: left;
+  width 20em;
 }
 </style>
 <body>
@@ -154,19 +225,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
- 
-  <div class="a">
+ <div class="c"><h3>Steps: Part A</h3></div>
+<div class="d"><h4>Steps: Part A</h4></div>
+<div class="a">
   <div class="b"> <h2>1.</h2> Heat up the cream cheese, microwave it for about a minute.</div>
   <div class="b"> <h2>2.</h2> Stir the heated with cream cheese, put the vanilla seeds and sugar in.</div>
   <div class="b"> <h2>3.</h2> Blend it togther.</div>
   <div class="b"> <h2>4.</h2>Put in the soften butter, and mix it evenly.</div>
   <div class="b"> <h2>5.</h2> Pour in the sour cream and stir it. </div>
 </div>
-<div class="c"><h1>Steps</h1></div>
-<div class="d"><h1>Steps</h1>
+<div class="z">
+<button class="square";><a href="https://kooz910.github.io/project2/version3/title.html"style="text-decoration:none;color:#006bb3">Home</a></button>
+<button class="squarea";><a href="https://kooz910.github.io/project2/version3/ingredients.html"style="text-decoration:none;color:#006bb3">Ingredients</a></button>
+<button class="squareb";><a href="https://kooz910.github.io/project2/version3/index1.html"style="text-decoration:none;color:#006bb3">Steps: Part B</a></button>
+<button class="squarec";><a href="https://kooz910.github.io/project2/version3/final.html"style="text-decoration:none;color:#006bb3">Final Product</a></button>
+<button class="circle"; style="color: #0d1a26"> <a href="https://kooz910.github.io/project2/version3/index.html"style="text-decoration:none;color: #ffcc99">Next</a></button>
 </div>
-<p></p>
-<div><button class="circle"; style="color: #0d1a26"> <a href="https://kooz910.github.io/project2/version3/index1.html"style="text-decoration:none;color: #ffcc99">Part B</a></button></div>
-<div><button class="circle1"; style="color: #0d1a26"> <a href="https://kooz910.github.io/project2/version3/ingredients.html"style="text-decoration:none;color: #ffcc99">Ingredient</a> </button></div>
+  
+
 </body>
 </html>
