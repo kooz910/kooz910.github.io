@@ -1,56 +1,17 @@
 <html la<!DOCTYPE html>
 <head>
-<title> Project 2: Version 3</title>
+<title> Project 2: Responsive</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Fredoka+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
 </head>
-<style> 
+<style>
 body{
   padding-left:3em;
   padding-top:3em;
   padding-right:3em;
-  padding-bottom:3em;
+  padding-bottom:5em;
   background-color: #ffffff;
-}
-  .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #006bb3;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-  font-family: 'Comfortaa', cursive;
-}
-
-.sidenav a:hover {
-  color: black;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 h1{
   font-family: 'Fredoka One', cursive;
@@ -64,14 +25,14 @@ h1{
   line-height:1em;
 }
 div.a{
-  font-size: 1.3em;
-  padding-top: 12em;
+  font-size: 1.2em;
+  padding-top: 13em;
   padding-right: 0em;
-  padding-left: 8em;
+  padding-left: 9em;
   padding-bottom: 5em;
   font-family: 'Comfortaa', cursive;
   line-height: 1.5em;
-  color: #006bb3;
+  color: #005C99;
   position: absolute;
   width: 36em;
   }
@@ -86,7 +47,7 @@ div.b{
 div.c{
   color: #ffeb99;
   position: absolute;
-  margin-top: -1.4em;
+  margin-top: -2.4em;
   padding-right: 0em;
   padding-left: 10em;
   padding-bottom: 0px;
@@ -173,26 +134,186 @@ h2{
   text-align: center;
   font-family: 'Fredoka One', cursive;
 }
+div.z{
+ position: absolute;
+ margin-top:-39em; 
+ margin-left: 10em;
+}
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: #660033;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 2em;
+  margin-left:24.5em;
+  text-align: center;
+font-family: 'Fredoka One', cursive;
+}
+
+@media only screen and (max-width: 375px) {
+  body{
+  padding-left:3em;
+  padding-top:3em;
+  padding-right:0em;
+  padding-bottom:5em;
+  background-color: #ffffff;
+}
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 12em;
+  text-align: left;
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  width:7em;
+  line-height:1.2em;
+}
+div.a{
+  font-size: 2.5em;
+  width: 27em;
+  padding-top: 16em;
+  padding-right: 0em;
+  padding-left: 3em;
+  padding-bottom: 5em;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5em;
+  color: #006bb3;
+  position: absolute;
+  }
+div.b{
+  position: center;
+  margin-top: 16em;
+  padding-right: 0em;
+  padding-left: 5em;
+  padding-bottom: 0px;
+  color: #ffad33;
+}
+div.c{
+  color: #ffeb99;
+  position: center;
+  margin-top: 17.4em;
+  padding-right: 0em;
+  padding-left: 5em;
+  padding-bottom: 0px;
+}
+h2{
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.square {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 3em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 22.5em;
+  margin-left: 2em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 3em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 3em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 2.5em;
+  width: 8em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 3em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+div.z{
+ position: absolute;
+ margin-top:9em; 
+ margin-left: 10em;
+}
+.circle {
+  height: 3.5em;
+  width: 3.5em;
+  background-color: #660033;
+  border-radius: 50%;
+  padding: .1em;
+  font-size: 6em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -6em;
+  margin-left:6.5em;
+  text-align: center;
+font-family: 'Fredoka One', cursive;
+}
+
+}
 </style>
   <body>
-  	<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="https://kooz910.github.io/index.html">Home</a>
-    <a href="https://kooz910.github.io/project2/version1/title.html">Version 1</a>
-    <a href="https://kooz910.github.io/project2/version2/title.html">Version 2</a>
-    <a href="https://kooz910.github.io/project2/version3/title.html">Version 3</a>
-    <a href="https://kooz910.github.io/project2/version4/title.html">Responsive</a>
-</div>
-<span style="font-size:30px;cursor:pointer; color:#006bb3" onclick="openNav()">&#9776; </span>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-<p></p>
 <div class="c"><h1>Cheese Cake</h1></div>
 <div class="b"><h1>Cheese Cake</h1></div>
 <p></p>
@@ -201,6 +322,7 @@ function closeNav() {
 <div class="tab"><button class="square";><a href="https://kooz910.github.io/project2/version4/ingredients.html"style="text-decoration:none;color:#006bb3">Ingredients</a></button>
 <button class="squarea";><a href="https://kooz910.github.io/project2/version4/index.html"style="text-decoration:none;color:#006bb3">Steps: Part A</a></button>
 <button class="squareb";><a href="https://kooz910.github.io/project2/version4/index1.html"style="text-decoration:none;color:#006bb3">Steps: Part B</a></button>
-<button class="squarec";><a href="https://kooz910.github.io/project2/version4/final.html"style="text-decoration:none;color:#006bb3">Final Product</a></button></div>
+<button class="squarec";><a href="https://kooz910.github.io/project2/version4/final.html"style="text-decoration:none;color:#006bb3">Final Product</a></button>
+<div class="z"><button class="circle"; style="color: "> <a href="https://kooz910.github.io/project2/version3/ingredients.html"style="text-decoration:none;color: #ffcc99">Next</a></button></div>
 </body>
 </html>
