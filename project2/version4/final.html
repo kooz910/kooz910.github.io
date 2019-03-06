@@ -45,45 +45,6 @@ div.c{
    width: 50em;
 }
 
-  .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #006bb3;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-  font-family: 'Comfortaa', cursive;
-}
-
-.sidenav a:hover {
-  color: #006bb3;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 .square {
   height: 2.5em;
   width: 8em;
@@ -176,36 +137,149 @@ font-family: 'Fredoka One', cursive;
 }
 img{
   padding-left: 7em;
-  margin-top: -25em;
+  margin-top: 8em;
+  width:350.2px;
+  height:auto; 
+}
+div.z{
+  position: absolute;
+  margin-left: -20em;
+  margin-top: -26em;
+}
+@media only screen and (max-width: 375px){
+body{
+  padding-left:3em;
+  padding-top:3em;
+  padding-right:3em;
+  padding-bottom:3em;
+  background-color: #ffffff;
+  }
+h3{
+  font-family: 'Fredoka One', cursive;
+  font-size:2.6em;
+  padding-top:0px;
+  padding-bottom:0px;
+  line-height:0px;
+  color: #ffeb99;
+}
+div.d{
+  position: absolute;
+  margin-top: -3em;
+ left: 3.5em;
+   right: 0em;
+    width: 17em;
+}
+
+h4{
+  font-family: 'Fredoka One', cursive;
+  font-size:2.6em;
+  padding-top:0px;
+  padding-bottom:0px;
+  line-height: 0px;
+ color:#ff9900;
+}
+div.c{
+  position: absolute;
+  margin-top: -2.5em;
+  left: 3.5em;
+  right: 0em;
+   width: 17em;
+}
+.square {
+  height: 2em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top:1.5em;
+  margin-left: 4.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 2em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 4.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 2em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 4.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 2em;
+  width: 7.5em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: 4.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+div.z{
+ position: absolute;
+ margin-top:0em; 
+ margin-left: 0em;
+ margin-bottom: 5em;
+}
+
+img{
+  width:250.2px;
+  height:auto;
+  padding-left:.48em;
+  margin-top: 3em;
+  border-radius: 8vw;
+}  
 }
 </style>
 <body>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="https://kooz910.github.io/index.html">Home</a>
-    <a href="https://kooz910.github.io/project2/version1/title.html">Version 1</a>
-    <a href="https://kooz910.github.io/project2/version2/title.html">Version 2</a>
-    <a href="https://kooz910.github.io/project2/version3/title.html">Version 3</a>
-    <a href="https://kooz910.github.io/project2/version4/title.html">Responsive</a>
-</div>
-<span style="font-size:30px;cursor:pointer; color:#006bb3" onclick="openNav()">&#9776; </span>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
  <div class="c"><h3>Final Product</h3></div>
 <div class="d"><h4>Final Product</h4></div>
-<div><button class="square";><a href="https://kooz910.github.io/project2/version4/title.html"style="text-decoration:none;color:#006bb3">Home</a></button>
+ <p><img src="cheesecake.jpg"alt="cheesecake"></p>
+<div class="z"><button class="square";><a href="https://kooz910.github.io/project2/version4/title.html"style="text-decoration:none;color:#006bb3">Home</a></button>
 <button class="squarea";><a href="https://kooz910.github.io/project2/version4/ingredients.html"style="text-decoration:none;color:#006bb3">Ingredients</a></button>
 <button class="squareb";><a href="https://kooz910.github.io/project2/version4/index.html"style="text-decoration:none;color:#006bb3">Steps: Part A</a></button>
-<button class="squarec";><a href="https://kooz910.github.io/project2/version4/index1.html"style="text-decoration:none;color:#006bb3">Steps: Part B</a></button>
-<button class="circle"; style="color: #0d1a26"> <a href="https://kooz910.github.io/project2/version4/index1.html"style="text-decoration:none;color: #ffcc99">Back</a></button></div>
-<p>
-  <img src="cheese.jpg"alt="cheese">
-</p>
+<button class="squarec";><a href="https://kooz910.github.io/project2/version4/index1.html"style="text-decoration:none;color:#006bb3">Steps: Part B</a></button></div>
 </body>
 </html>
