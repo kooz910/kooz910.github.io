@@ -1,0 +1,55 @@
+body{
+   font-family: 'Noto Serif SC', serif;
+   background-color: white;
+   padding: 1.5em;
+}
+.container {
+  display:flex;
+  width: 96vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.weekdays{
+    display: flex;
+    width:13.6vw;
+    height: 3vh;
+    text-align: center;
+}
+.none{
+    display: flex;
+    width:13.6vw;
+    height: 13.6vh;
+    text-align: center;
+}
+.days{
+    display: flex;
+    width:13.6vw;
+    height: 13.6vh;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+body{
+   font-family: 'Noto Serif SC', serif;
+   background-color: white;
+   padding: 3em;
+}
+.container {
+  width: 80vw;
+  
+}
+.weekdays{
+    display: none;
+}
+.none{
+    display: none;
+}
+hr{
+     display: none;
+}
+.days{
+    width:80vw;
+    height: 10vh;
+    border-top: .1em solid black;
+    
+}
+}

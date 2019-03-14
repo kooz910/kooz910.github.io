@@ -1,0 +1,357 @@
+body{
+  padding-left:3vw;
+  padding-top:3vh;
+  padding-right:3vw;
+  padding-bottom:5vh;
+  background-color: #ffffff;
+}
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #006bb3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6vh;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2vw;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidenav a:hover {
+  color: #006bb3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2.5vw;
+  font-size: 3.6vw;
+  margin-left: 5vw;
+}
+
+@media screen and (max-height: 45vw) {
+  .sidenav {padding-top: 1.5vh;}
+  .sidenav a {font-size: 1.8vw;}
+}
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 7vw;
+  text-align: left;
+  margin-top: -10vw;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  width:60vw;
+  line-height:0vh;
+}
+div.a{
+  font-size: 1.45vw;
+  margin-top: 19vh;
+  padding-right: 0em;
+  padding-left: 51vw;
+  padding-bottom: 5vw;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.6em;
+  color: #00568F;
+  position: absolute;
+  width: 20vw;
+  }
+div.b{
+  position: absolute;
+  margin-top: 20vh;
+  padding-right: 0em;
+  padding-left: 30vw;
+  padding-bottom: 0px;
+  color: #003d66;
+}
+h2{
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.square {
+  height: 8vh;
+  width: 13vw;
+  border-radius: 1.6vw;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.7vw;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -45vh;
+  margin-left: 0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 8vh;
+  width: 13vw;
+  border-radius: 1.6vw;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.6vw;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -36vh;
+  margin-left:0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 8vh;
+  width: 13vw;
+  border-radius: 1.6vw;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1.6vw;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -27vh;
+  margin-left: 0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 8vh;
+  width: 13vw;
+  border-radius: 1.6vw;
+  border: .1vw solid;
+  background-color: #cce6ff;
+  font-size: 1.6vw;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -18vh;
+  margin-left: 0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+div.t{
+  position: absolute;
+  margin-top: 46vh;
+}
+div.z{
+ position: absolute;
+ margin-top:70vh; 
+ margin-left: 62vw;
+}
+.squared {
+  height: 6vh;
+  width: 8vw;
+  border-radius: 1.6vw;
+  border: .1vw solid;
+  background-color: #990033;
+  font-size: 1.6vw;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: -10vh;
+  margin-left: 0em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+img{
+  position: absolute;
+  width:18vw;
+  height:auto;
+  margin-left:30vw;
+  margin-top: 15vh;
+  border-radius: 2vw;
+}
+@media only screen and (max-width: 375px) {
+  body{
+  padding-left:3em;
+  padding-top:3em;
+  padding-right:3em;
+  padding-bottom:3em;
+  background-color: #ffffff;
+}
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.4em;
+  text-align: left;
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  position: center;
+  width:7.5em;
+  line-height:1.2em;
+}
+div.a{
+  font-size: .7em;
+  width: 20em;
+  padding-top: 23.7em;
+  padding-right: 0em;
+  padding-left: 1em;
+  padding-bottom: 5em;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5em;
+  color: #006bb3;
+  position: absolute;
+  }
+div.b{
+  position: absolute;
+  margin-top: 23.5em;
+  padding-right: 0em;
+  padding-left: .5em;
+  padding-bottom: 0px;
+  color: #003d66;
+}
+div.c{
+  color: #ffeb99;
+  position: absolute;
+  margin-top: 16.8em;
+  padding-right: 0em;
+  padding-left: .5em;
+  padding-bottom: 0px;
+}
+h2{
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.square {
+  height: 2.1em;
+  width: 15em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top:16em;
+  margin-left: .7em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarea {
+  height: 2.1em;
+  width: 15em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: .7em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squareb {
+  height: 2.1em;
+  width: 15em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-left: .7em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squarec {
+  height: 2.1em;
+  width: 15em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #cce6ff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: relative;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+  margin-left: .7em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.squared {
+  height: 2.1em;
+  width: 15em;
+  border-radius: 1em;
+  border: .1em solid;
+  background-color: #990033;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: absolute;
+  bottom: 0;
+  margin-right: 0px;
+  margin-top:23.5em;
+  margin-left: -14em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+img{
+  width:16.2em;
+  height:auto;
+  margin-left:0em;
+  margin-top: 0em;
+  border-radius: 8vw;
+}  
+div.z{
+ margin-top: 32em;
+ position: absolute;
+}
+div.t{
+ margin-bottom:10em;
+ position: absolute;
+}
+}
