@@ -1,0 +1,27 @@
+<html la<!DOCTYPE html>
+<head>
+<title>Animation: Part 1</title>
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style1.css">	
+<script type="text/javascript" src="jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#image1").on({
+   mouseenter: function(){
+    $(this).attr('src','illus3.svg');
+  },
+  mouseleave: function(){
+    $(this).attr('src','illus1.svg');
+  }
+  });
+  
+});
+</script> 
+</head>
+<body> 
+<div class="a"><img src="illus2.svg" class="center"></div>
+<img id="image1"src="illus1.svg" class="center"></div>
+<h1>Soup Dumpling</h1>
+</body>
+</html>

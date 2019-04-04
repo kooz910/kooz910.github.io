@@ -12,9 +12,9 @@ h1{
   margin-right: auto;
   width: 30%;
 }
-div{ 
-   animation-name: slidein;
-  animation-duration: 5s;
+div.a{ 
+  animation-name: slidein;
+  animation-duration: 4s;
   animation-iteration-count:infinite;
 
 }
@@ -32,3 +32,4 @@ div{
     opacity: 0;
   }
 }
+
