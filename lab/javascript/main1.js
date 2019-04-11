@@ -35,10 +35,3 @@ else if (name.length -"1" >"14"){
  console.log("My name is relatively long.");}
 else{
 console.log("My name is neither short nor long.");}
-
-var minute= new Date().getMinutes();
-var newyork="43";
-function convert(newyork) {
-	return(newyork)=(newyork-32)*5/9 
-} 
-console.log("The temperature of New York City is"+" "+ convert(newyork)+" "+"Celsius"+" "+"at"+" "+hour+":"+ minute+".")

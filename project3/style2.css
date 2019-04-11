@@ -1,9 +1,11 @@
 body{
-   background-color: white;
+   background-color: #9CC9DC;
   padding-left: 60px;
    padding-right:60px;
    padding-top:30px;
    padding-bottom: 10px;
+   font-family: 'Noto Serif SC', serif;
+
 }
  .center {
   display: block;
@@ -30,10 +32,11 @@ body{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
+  font-family: 'Noto Serif SC', serif;
   color: #660000;
   display: block;
   transition: 0.3s;
-  font-family: 'Abril Fatface', cursive; 
+  
 }
 
 .sidenav a:hover {
@@ -52,3 +55,42 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+div.a{
+position: relative;
+font-family: 'Noto Serif SC', serif;
+font-size: 2em;
+font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+div.b{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5em;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.circle {
+  background-color: #ffffff;
+  padding: 14px 40px;
+  font-size: 1.5em;
+  border-radius: .8em;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+}
+
+
+
+
