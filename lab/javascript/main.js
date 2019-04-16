@@ -42,3 +42,9 @@ function convert(newyork) {
 	return(newyork)=(newyork-32)*5/9 
 } 
 console.log("The temperature of New York City is"+" "+ convert(newyork)+" "+"Celsius"+" "+"at"+" "+hour+":"+ minute+".")
+var paris="56";
+function convert(paris) {
+	return(paris)=(paris-32)*5/9 
+} 
+console.log("The temperature of Paris is"+" "+ convert(paris)+" "+"Celsius"+" "+"at"+" "+hour+":"+ minute+".")
+
