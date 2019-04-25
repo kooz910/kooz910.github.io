@@ -1,16 +1,3 @@
-//THESE ARE THE VARIABLES WE WILL USE
-var windspeed; //Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.
-var winddeg; //Wind direction, degrees (meteorological)
-var temp; //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. 
-var tempmin;
-var tempmax;
-var pressure; //Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
-var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
-var weatherdescription; //Weather condition within the group
-var cloudiness; //Cloudiness, %
-
-
 $(document).ready(function(){
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
@@ -29,13 +16,43 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
+    var blobwidth = tempmin;
+    var svg1 = document.getElementById("svg1");
+    if(blobwidth < "-20")
+        {(svg1.style.width="8.3%"); (svg1.style.height="auto");}
+    else if(blobwidth < "-15")
+        {(svg1.style.width="16.6%"); (svg1.style.height="auto");}
+    else if(blobwidth < "-10")
+         {(svg1.style.width="24.9%"); (svg1.style.height="auto");}
+    else if(blobwidth < "0")
+        {(svg1.style.width="33.2%"); (svg1.style.height="auto");}
+
+    else if(blobwidth < "5")
+         {(svg1.style.width="41.5%"); (svg1.style.height="auto");}
     
-        $('.b').append('Temp: ' + temp + '</br>');
-        $('.b').append('Temp Min: ' + tempmin + '</br>');
-        $('.b').append('Temp Max: ' + tempmax + '</br>');
+    else if(blobwidth < "10")
+       {(svg1.style.width="49.8%"); (svg1.style.height="auto");}
     
-    }   
-});
+    else if(blobwidth < "15")
+       {(svg1.style.width="58.1%"); (svg1.style.height="auto");}
+
+    else if(blobwidth < "20")
+         {(svg1.style.width="66.4%"); (svg1.style.height="auto");}
+    
+    else if(blobwidth < "25")
+        {(svg1.style.width="74.7%"); (svg1.style.height="auto");}
+    
+    else if(blobwidth < "30")
+         {(svg1.style.width="83%"); (svg1.style.height="auto");}
+
+    else if(blobwidth < "35")
+        {(svg1.style.width="91.3%"); (svg1.style.height="auto");}
+
+        else if(blobwidth < "40")
+        {(svg1.style.width="99.6%"); (svg1.style.height="auto");}
+    
+    } 
+    });
 
 $(document).ready(function(){
     $.ajax({
@@ -55,61 +72,43 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
+    var blobwidth = tempmin;
+    var blob2 = document.getElementById("blobsecond");
+    if(blobwidth < "-20")
+        {(blob2.style.width="8.3%"); (blob2.style.height="auto");}
+    else if(blobwidth < "-15")
+        {(blob2.style.width="16.6%"); (blob2.style.height="auto");}
+    else if(blobwidth < "-10")
+         {(blob2.style.width="24.9%"); (blob2.style.height="auto");}
+    else if(blobwidth < "0")
+        {(blob2.style.width="33.2%"); (blob2.style.height="auto");}
+
+    else if(blobwidth < "5")
+         {(blob2.style.width="41.5%"); (blob2.style.height="auto");}
     
-        $('.c').append('Temp: ' + temp + '</br>');
-        $('.c').append('Temp Min: ' + tempmin + '</br>');
-        $('.c').append('Temp Max: ' + tempmax+ '</br>');
-            }   
+    else if(blobwidth < "10")
+       {(blob2.style.width="49.8%"); (blob2.style.height="auto");}
+    
+    else if(blobwidth < "15")
+       {(svg1.style.width="58.1%"); (svg1.style.height="auto");}
+
+    else if(blobwidth < "20")
+         {(svg1.style.width="66.4%"); (svg1.style.height="auto");}
+    
+    else if(blobwidth < "25")
+        {(svg1.style.width="74.7%"); (svg1.style.height="auto");}
+    
+    else if(blobwidth < "30")
+         {(svg1.style.width="83%"); (svg1.style.height="auto");}
+
+    else if(blobwidth < "35")
+        {(svg1.style.width="91.3%"); (svg1.style.height="auto");}
+
+        else if(blobwidth < "40")
+        {(svg1.style.width="99.6%"); (svg1.style.height="auto");}
+    
+    } 
 
 });
 
-$(document).ready(function(){
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=3067696&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            myWeatherInterpretation();
 
-        }
-    });
-    
-    function myWeatherInterpretation(){
-    
-        $('.d').append('Temp: ' + temp + '</br>');
-        $('.d').append('Temp Min: ' + tempmin + '</br>');
-        $('.d').append('Temp Max: ' + tempmax + '</br>');
-        
-    }   
-});
-
-$(document).ready(function(){
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=2759794&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            myWeatherInterpretation();
-
-        }
-    });
-    
-    function myWeatherInterpretation(){
-    
-        $('.e').append('Temp: ' + temp + '</br>');
-        $('.e').append('Temp Min: ' + tempmin + '</br>');
-        $('.e').append('Temp Max: ' + tempmax + '</br>');
-    }   
-});

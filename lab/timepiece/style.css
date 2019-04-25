@@ -2,5 +2,16 @@ body{
    font-family: 'Noto Serif SC', serif;
    background-color: white;
    padding: 1.5em;
+   padding-top: 5em;
 }
- 
+img{
+	width: 50%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ div.a{
+width: 10%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;

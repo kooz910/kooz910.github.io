@@ -1,0 +1,60 @@
+<html la<!DOCTYPE html>
+<head>
+<title> Part 2 </title>
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="style2.css">  
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://kooz910.github.io/index.html">Home</a>
+  <a href="https://kooz910.github.io/project5/title.html">Stage 1</a>
+  <a href="https://kooz910.github.io/project5/title1.html">Stage 2</a>
+</div>
+<div class="frame">
+  <div class='cursor'></div>
+  <div class="center">
+    <div class="ball"></div>
+    
+    <div class='blob blob-1'></div>
+    <div class='blob blob-2'></div>
+    <div class='blob blob-3'></div>
+    <div class='blob blob-4'></div>
+    <div class='blob blob-5'></div>
+    <div class='blob blob-6'></div> 
+    <div class='blob blob-7'></div>
+    <div class='blob blob-8'></div>
+    
+    <div class='drop drop-1'></div>
+    <div class='drop drop-2'></div>
+    <div class='drop drop-3'></div>
+    <div class='drop drop-4'></div>
+    <div class='drop drop-5'></div>
+    <div class='drop drop-6'></div>
+  </div>
+</div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </defs>
+</svg>
+ <script src="myscript2.js" type="text/javascript"></script>
+</body>
+</html>
+
