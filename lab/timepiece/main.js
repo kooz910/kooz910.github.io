@@ -129,4 +129,13 @@ case 14:
     day = document.getElementById('img');
     img.src = images[7];
     break;
-  }
+  };
+  var time = new Date().getTime();
+     function refresh() {
+         if(new Date().getTime() - time >= 60000) 
+             window.location.reload(true);
+         else 
+             setTimeout(refresh, 10000);
+     }
+
+     setTimeout(refresh, 10000);
