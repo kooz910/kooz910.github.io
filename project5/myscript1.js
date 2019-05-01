@@ -1,3 +1,31 @@
+
+
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+    
+        $('#text').append('Temp: ' + temp + '</br>');
+        $('#text').append('Temp Min: ' + tempmin + '</br>');
+        $('#text').append('Temp Max: ' + tempmax + '</br>');
+    
+    }   
+});
+
 $(document).ready(function(){
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
@@ -19,278 +47,84 @@ $(document).ready(function(){
     var blobwidth = tempmin;
     var svg1 = document.getElementById("svg1");
     if(blobwidth < "-20")
-        {(svg1.style.width="1%"); (svg1.style.fill="#ebf0fa");}
+        {(svg1.style.width="2%"); (svg1.style.fill="#ebf0fa");}
 
     else if(blobwidth < "-17.5")
-        {(svg1.style.width="10%"); (svg1.style.fill="#ebf0fa");}
+        {(svg1.style.width="4%"); (svg1.style.fill="#ebf0fa");}
     
     else if(blobwidth < "-15")
-        {(svg1.style.width="20%"); (svg1.style.fill="#d6e0f5");}
+        {(svg1.style.width="6%"); (svg1.style.fill="#d6e0f5");}
     
      else if(blobwidth < "-12.5")
-        {(svg1.style.width="30%"); (svg1.style.fill="#d6e0f5");}
+        {(svg1.style.width="8%"); (svg1.style.fill="#d6e0f5");}
 
     else if(blobwidth < "-10")
-         {(svg1.style.width="40%"); (svg1.style.fill="#c2d1f0");}
+         {(svg1.style.width="10%"); (svg1.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-7.5")
-        {(svg1.style.width="50%"); (svg1.style.fill="#c2d1f0");}
+        {(svg1.style.width="12%"); (svg1.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-5")
-        {(svg1.style.width="60%"); (svg1.style.fill="#adc2eb");}
+        {(svg1.style.width="14%"); (svg1.style.fill="#adc2eb");}
     
     else if(blobwidth < "-2.5")
-        {(svg1.style.width="70%"); (svg1.style.fill="#adc2eb");}
+        {(svg1.style.width="16%"); (svg1.style.fill="#adc2eb");}
     
     else if(blobwidth < "0")
-        {(svg1.style.width="80%"); (svg1.style.fill="#99b3e6");}
+        {(svg1.style.width="18%"); (svg1.style.fill="#99b3e6");}
     
     else if(blobwidth < "2.5")
-        {(svg1.style.width="90%"); (svg1.style.fill="#85a3e0");}
+        {(svg1.style.width="20%"); (svg1.style.fill="#85a3e0");}
 
     else if(blobwidth < "5")
-         {(svg1.style.width="100%"); (svg1.style.fill="#7094db");}
+         {(svg1.style.width="22%"); (svg1.style.fill="#7094db");}
 
     else if(blobwidth < "7.5")
-        {(svg1.style.width="110%"); (svg1.style.fill="#5c85d6");}
+        {(svg1.style.width="24%"); (svg1.style.fill="#5c85d6");}
     
     else if(blobwidth < "10")
-       {(svg1.style.width="120%"); (svg1.style.fill="#4775d1");}
+       {(svg1.style.width="26%"); (svg1.style.fill="#4775d1");}
 
     else if(blobwidth < "12.5")
-        {(svg1.style.width="130%"); (svg1.style.fill="#3366cc");}
+        {(svg1.style.width="28%"); (svg1.style.fill="#3366cc");}
     
     else if(blobwidth < "15")
-       {(svg1.style.width="140%"); (svg1.style.fill="#2e5cb8");}
+       {(svg1.style.width="30%"); (svg1.style.fill="#2e5cb8");}
 
     else if(blobwidth < "17.5")
-        {(svg1.style.width="150%"); (svg1.style.fill="#2952a3");(svg1.style.stroke="#f9ecec"); (svg1.style.stroke="#f9ecec");}
+        {(svg1.style.width="32%"); (svg1.style.fill="#2952a3");}
 
     else if(blobwidth < "20")
-         {(svg1.style.width="160%"); (svg1.style.fill="#24478f");}
+         {(svg1.style.width="34%"); (svg1.style.fill="#24478f");}
     
     else if(blobwidth < "22.5")
-        {(svg1.style.width="170%"); (svg1.style.fill="#24478f");}
+        {(svg1.style.width="36%"); (svg1.style.fill="#24478f");}
     
     else if(blobwidth < "25")
-        {(svg1.style.width="180%"); (svg1.style.fill="#1f3d7a");}
+        {(svg1.style.width="38%"); (svg1.style.fill="#1f3d7a");}
 
      else if(blobwidth < "27.5")
-        {(svg1.style.width="190%"); (svg1.style.fill="#1f3d7a");}
+        {(svg1.style.width="40%"); (svg1.style.fill="#1f3d7a");}
     
     else if(blobwidth < "30")
-         {(svg1.style.width="200%"); (svg1.style.fill="#193366");}
+         {(svg1.style.width="42%"); (svg1.style.fill="#193366");}
 
     else if(blobwidth < "32.5")
-        {(svg1.style.width="210%"); (svg1.style.fill="#193366");}
+        {(svg1.style.width="44%"); (svg1.style.fill="#193366");}
 
     else if(blobwidth < "35")
-        {(svg1.style.width="220%"); (svg1.style.fill="#0f1f3d");}
+        {(svg1.style.width="46%"); (svg1.style.fill="#0f1f3d");}
 
     else if(blobwidth < "37.5")
-        {(svg1.style.width="230%"); (svg1.style.fill="#0a1429");}
+        {(svg1.style.width="48%"); (svg1.style.fill="#0a1429");}
 
     else if (blobwidth < "40")
-        {(svg1.style.width="240%"); (svg1.style.fill="#050a14");}
+        {(svg1.style.width="50%"); (svg1.style.fill="#050a14");}
     
     } 
     });
-$(document).ready(function(){
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            myWeatherInterpretation();
 
-        }
-    });
-    
-    function myWeatherInterpretation(){
-    var blobwidth = tempmin;   
-    var svg2 = document.getElementById("svg2");
-    if(blobwidth < "-20")
-        {(svg2.style.width="1%"); (svg2.style.fill="#ebf0fa");}
 
-    else if(blobwidth < "-17.5")
-        {(svg2.style.width="10%"); (svg2.style.fill="#ebf0fa");}
-    
-    else if(blobwidth < "-15")
-        {(svg2.style.width="20%"); (svg2.style.fill="#d6e0f5");}
-    
-     else if(blobwidth < "-12.5")
-        {(svg2.style.width="30%"); (svg2.style.fill="#d6e0f5");}
-
-    else if(blobwidth < "-10")
-         {(svg2.style.width="40%"); (svg2.style.fill="#c2d1f0");}
-    
-    else if(blobwidth < "-7.5")
-        {(svg2.style.width="50%"); (svg2.style.fill="#c2d1f0");}
-    
-    else if(blobwidth < "-5")
-        {(svg2.style.width="60%"); (svg2.style.fill="#adc2eb");}
-    
-    else if(blobwidth < "-2.5")
-        {(svg2.style.width="70%"); (svg2.style.fill="#adc2eb");}
-    
-    else if(blobwidth < "0")
-        {(svg2.style.width="80%"); (svg2.style.fill="#99b3e6");}
-    
-    else if(blobwidth < "2.5")
-        {(svg2.style.width="90%"); (svg2.style.fill="#85a3e0");}
-
-    else if(blobwidth < "5")
-         {(svg2.style.width="100%"); (svg2.style.fill="#7094db");}
-
-    else if(blobwidth < "7.5")
-        {(svg2.style.width="110%"); (svg2.style.fill="#5c85d6");}
-    
-    else if(blobwidth < "10")
-       {(svg2.style.width="120%"); (svg2.style.fill="#4775d1");}
-
-    else if(blobwidth < "12.5")
-        {(svg2.style.width="130%"); (svg2.style.fill="#3366cc");}
-    
-    else if(blobwidth < "15")
-       {(svg2.style.width="140%"); (svg2.style.fill="#2e5cb8");}
-
-    else if(blobwidth < "17.5")
-        {(svg1.style.width="150%"); (svg2.style.fill="#2952a3");}
-
-    else if(blobwidth < "20")
-         {(svg2.style.width="160%"); (svg2.style.fill="#24478f");}
-    
-    else if(blobwidth < "22.5")
-        {(svg2.style.width="170%"); (svg2.style.fill="#24478f");}
-    
-    else if(blobwidth < "25")
-        {(svg2.style.width="180%"); (svg2.style.fill="#1f3d7a");}
-
-     else if(blobwidth < "27.5")
-        {(svg2.style.width="190%"); (svg2.style.fill="#1f3d7a");}
-    
-    else if(blobwidth < "30")
-         {(svg2.style.width="200%"); (svg2.style.fill="#193366");}
-
-    else if(blobwidth < "32.5")
-        {(svg2.style.width="210%"); (svg2.style.fill="#193366");}
-
-    else if(blobwidth < "35")
-        {(svg2.style.width="220%"); (svg2.style.fill="#0f1f3d");}
-
-    else if(blobwidth < "37.5")
-        {(svg2.style.width="230%"); (svg2.style.fill="#0a1429");}
-
-    else if (blobwidth < "40")
-        {(svg2.style.width="240%"); (svg2.style.fill="#050a14");}
-
-    } 
-
-});
-
-$(document).ready(function(){
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=3067696&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            myWeatherInterpretation();
-
-        }
-    });
-function myWeatherInterpretation(){
-    var blobwidth = tempmin;
-    var svg3 = document.getElementById("svg3");
-  if(blobwidth < "-20")
-        {(svg3.style.width="1%"); (svg3.style.fill="#ebf0fa");}
-
-    else if(blobwidth < "-17.5")
-        {(svg3.style.width="10%"); (svg3.style.fill="#ebf0fa");}
-    
-    else if(blobwidth < "-15")
-        {(svg3.style.width="20%"); (svg3.style.fill="#d6e0f5");}
-    
-     else if(blobwidth < "-12.5")
-        {(svg3.style.width="30%"); (svg3.style.fill="#d6e0f5");}
-
-    else if(blobwidth < "-10")
-         {(svg3.style.width="40%"); (svg3.style.fill="#c2d1f0");}
-    
-    else if(blobwidth < "-7.5")
-        {(svg3.style.width="50%"); (svg3.style.fill="#c2d1f0");}
-    
-    else if(blobwidth < "-5")
-        {(svg3.style.width="60%"); (svg3.style.fill="#adc2eb");}
-    
-    else if(blobwidth < "-2.5")
-        {(svg3.style.width="70%"); (svg3.style.fill="#adc2eb");}
-    
-    else if(blobwidth < "0")
-        {(svg3.style.width="80%"); (svg3.style.fill="#99b3e6");}
-    
-    else if(blobwidth < "2.5")
-        {(svg3.style.width="90%"); (svg3.style.fill="#85a3e0");}
-
-    else if(blobwidth < "5")
-         {(svg3.style.width="100"); (svg3.style.fill="#7094db");}
-
-    else if(blobwidth < "7.5")
-        {(svg3.style.width="110%"); (svg3.style.fill="#5c85d6");}
-    
-    else if(blobwidth < "10")
-       {(svg3.style.width="120%"); (svg3.style.fill="#4775d1");}
-
-    else if(blobwidth < "12.5")
-        {(svg3.style.width="130%"); (svg3.style.fill="#3366cc");}
-    
-    else if(blobwidth < "15")
-       {(svg3.style.width="140%"); (svg3.style.fill="#2e5cb8");}
-
-    else if(blobwidth < "17.5")
-        {(svg3.style.width="150%"); (svg3.style.fill="#2952a3");}
-
-    else if(blobwidth < "20")
-         {(svg3.style.width="160%"); (svg3.style.fill="#24478f");}
-    
-    else if(blobwidth < "22.5")
-        {(svg3.style.width="170%"); (svg3.style.fill="#24478f");}
-    
-    else if(blobwidth < "25")
-        {(svg3.style.width="180%"); (svg3.style.fill="#1f3d7a");}
-
-     else if(blobwidth < "27.5")
-        {(svg3.style.width="190%"); (svg3.style.fill="#1f3d7a");}
-    
-    else if(blobwidth < "30")
-         {(svg3.style.width="200%"); (svg3.style.fill="#193366");}
-
-    else if(blobwidth < "32.5")
-        {(svg3.style.width="210%"); (svg3.style.fill="#193366");}
-
-    else if(blobwidth < "35")
-        {(svg3.style.width="220%"); (svg3.style.fill="#0f1f3d");}
-
-    else if(blobwidth < "37.5")
-        {(svg3.style.width="230%"); (svg3.style.fill="#0a1429");}
-
-    else if (blobwidth < "40")
-        {(svg3.style.width="240%"); (svg3.style.fill="#050a14");}
-    
-    } 
-
-    });
 
 $(document).ready(function(){
     $.ajax({
@@ -310,83 +144,178 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
-    var blobwidth = tempmin;
-    var svg4 = document.getElementById("svg4");
-    if(blobwidth < "-20")
-        {(svg4.style.width="1%"); (svg4.style.fill="#ebf0fa");}
-
-    else if(blobwidth < "-17.5")
-        {(svg4.style.width="10%"); (svg4.style.fill="#ebf0fa");}
+    var blobwidth1 = tempmax;
+    var svg1 = document.getElementById("svg1");
+    if(blobwidth1 < "-20")
+    {svg1.setAttribute("stroke","#f9ecec");}
     
-    else if(blobwidth < "-15")
-        {(svg4.style.width="20%"); (svg4.style.fill="#d6e0f5");}
+    else if(blobwidth1 < "-17.5")
+    {svg1.setAttribute("stroke","#f9ecec");}
     
-     else if(blobwidth < "-12.5")
-        {(svg4.style.width="30%"); (svg4.style.fill="#d6e0f5");}
-
-    else if(blobwidth < "-10")
-         {(svg4.style.width="40%"); (svg4.style.fill="#c2d1f0");}
+    else if(blobwidth1 < "-15")
+    {svg1.setAttribute("stroke","#f2d9d9");}
     
-    else if(blobwidth < "-7.5")
-        {(svg4.style.width="50%"); (svg4.style.fill="#c2d1f0");}
+     else if(blobwidth1 < "-12.5")
+    {svg1.setAttribute("stroke","#f2d9d9");}
+
+    else if(blobwidth1 < "-10")
+    {svg1.setAttribute("stroke","#ecc6c6");}
     
-    else if(blobwidth < "-5")
-        {(svg4.style.width="60%"); (svg4.style.fill="#adc2eb");}
+    else if(blobwidth1 < "-7.5")
+    {svg1.setAttribute("stroke","#ecc6c6");}
     
-    else if(blobwidth < "-2.5")
-        {(svg4.style.width="70%"); (svg4.style.fill="#adc2eb");}
+    else if(blobwidth1 < "-5")
+    {svg1.setAttribute("stroke","#e6b3b3");}
     
-    else if(blobwidth < "0")
-        {(svg4.style.width="80%"); (svg4.style.fill="#99b3e6");}
+    else if(blobwidth1 < "-2.5")
+    {svg1.setAttribute("stroke","#e6b3b3");}
     
-    else if(blobwidth < "2.5")
-        {(svg4.style.width="90%"); (svg4.style.fill="#85a3e0");}
-
-    else if(blobwidth < "5")
-         {(svg4.style.width="100%"); (svg4.style.fill="#7094db");}
-
-    else if(blobwidth < "7.5")
-        {(svg4.style.width="110%"); (svg4.style.fill="#5c85d6");}
+    else if(blobwidth1 < "0")
+    {svg1.setAttribute("stroke","#df9f9f");}
     
-    else if(blobwidth < "10")
-       {(svg4.style.width="120%"); (svg4.style.fill="#4775d1");}
+    else if(blobwidth1 < "2.5")
+    {svg1.setAttribute("stroke","#d98c8c");}
 
-    else if(blobwidth < "12.5")
-        {(svg4.style.width="130%"); (svg4.style.fill="#3366cc");}
+    else if(blobwidth1 < "5")
+    {svg1.setAttribute("stroke","#d27979");}
+
+    else if(blobwidth1 < "7.5")
+    {svg1.setAttribute("stroke","#cc6666");}
     
-    else if(blobwidth < "15")
-       {(svg4.style.width="140%"); (svg4.style.fill="#2e5cb8");}
+    else if(blobwidth1 < "10")
+    {svg1.setAttribute("stroke","#c65353");}
 
-    else if(blobwidth < "17.5")
-        {(svg4.style.width="150%"); (svg4.style.fill="#2952a3");}
-
-    else if(blobwidth < "20")
-         {(svg4.style.width="160%"); (svg4.style.fill="#24478f");}
+    else if(blobwidth1 < "12.5")
+    {svg1.setAttribute("stroke","#bf4040");}
     
-    else if(blobwidth < "22.5")
-        {(svg4.style.width="170%"); (svg4.style.fill="#24478f");}
+    else if(blobwidth1 < "15")
+    {svg1.setAttribute("stroke","#ac3939");}
+
+    else if(blobwidth1 < "17.5")
+    {svg1.setAttribute("stroke","#993333");}
+
+    else if(blobwidth1 < "20")
+    {svg1.setAttribute("stroke","#862d2d");}
+   
+    else if(blobwidth1 < "22.5")
+    {svg1.setAttribute("stroke","#862d2d");}
     
-    else if(blobwidth < "25")
-        {(svg4.style.width="180%"); (svg4.style.fill="#1f3d7a");}
+    else if(blobwidth1 < "25")
+    {svg1.setAttribute("stroke","#732626");}
 
-     else if(blobwidth < "27.5")
-        {(svg4.style.width="190%"); (svg4.style.fill="#1f3d7a");}
+     else if(blobwidth1 < "27.5")
+    {svg1.setAttribute("stroke","#732626");}
     
-    else if(blobwidth < "30")
-         {(svg4.style.width="200%"); (svg4.style.fill="#193366");}
+    else if(blobwidth1 < "30")
+    {svg1.setAttribute("stroke","#602020");}
 
-    else if(blobwidth < "32.5")
-        {(svg4.style.width="210%"); (svg4.style.fill="#193366");}
+    else if(blobwidth1 < "32.5")
+    {svg1.setAttribute("stroke","#602020");}
 
-    else if(blobwidth < "35")
-        {(svg4.style.width="220%"); (svg4.style.fill="#0f1f3d");}
+    else if(blobwidth1 < "35")
+    {svg1.setAttribute("stroke","#4d1919");}
 
-    else if(blobwidth < "37.5")
-        {(svg4.style.width="230%"); (svg4.style.fill="#0a1429");}
+    else if(blobwidth1 < "37.5")
+    {svg1.setAttribute("stroke","#4d1919");}
 
-    else if (blobwidth < "40")
-        {(svg4.style.width="240%"); (svg4.style.fill="#050a14");}
+    else if (blobwidth1 < "40")
+    {svg1.setAttribute("stroke","#391313");}
+}
+ });
+
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
     
-    } 
+function myWeatherInterpretation(){
+    var blobthick = tempmax - tempmin;
+    var svg1 = document.getElementById("svg1");
+   if(blobthick < "-20")
+    {svg1.setAttribute("stroke-width","1");}
+    
+    else if(blobthick < "-17.5")
+    {svg1.setAttribute("stroke-width","10");}
+    
+    else if(blobthick < "-15")
+    {svg1.setAttribute("stroke-width","20");}
+    
+     else if(blobthick < "-12.5")
+    {svg1.setAttribute("stroke-width","30");}
 
+    else if(blobthick < "-10")
+    {svg1.setAttribute("stroke-width","40");}
+    
+    else if(blobthick < "-7.5")
+    {svg1.setAttribute("stroke-width","50");}
+    
+    else if(blobthick < "-5")
+    {svg1.setAttribute("stroke-width","60");}
+
+    else if(blobthick < "-2.5")
+    {svg1.setAttribute("stroke-width","70");}
+    
+    else if(blobthick < "0")
+    {svg1.setAttribute("stroke-width","80");}
+    
+    else if(blobthick < "2.5")
+   {svg1.setAttribute("stroke-width","90");}
+
+    else if(blobthick < "5")
+    {svg1.setAttribute("stroke-width","100");}
+
+    else if(blobthick < "7.5")
+    {svg1.setAttribute("stroke-width","110");}
+    
+    else if(blobthick < "10")
+    {svg1.setAttribute("stroke-width","120");}
+
+    else if(blobthick < "12.5")
+    {svg1.setAttribute("stroke-width","130");}
+    
+    else if(blobthick < "15")
+    {svg1.setAttribute("stroke-width","140");}
+
+    else if(blobthick < "17.5")
+    {svg1.setAttribute("stroke-width","150");}
+
+    else if(blobthick < "20")
+    {svg1.setAttribute("stroke-width","160");}
+   
+    else if(blobthick < "22.5")
+   {svg1.setAttribute("stroke-width","170");}
+    
+    else if(blobthick < "25")
+    {svg1.setAttribute("stroke-width","180");}
+
+     else if(blobthick < "27.5")
+    {svg1.setAttribute("stroke-width","190");}
+    
+    else if(blobthick < "30")
+   {svg1.setAttribute("stroke-width","200");}
+
+    else if(blobthick < "32.5")
+    {svg1.setAttribute("stroke-width","210");}
+
+    else if(blobthick < "35")
+   {svg1.setAttribute("stroke-width","220");}
+
+    else if(blobthick < "37.5")
+    {svg1.setAttribute("stroke-width","230");}
+
+    else if (blobthick < "40")
+    {svg1.setAttribute("stroke-width","240");}
+}
     });

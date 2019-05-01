@@ -54,23 +54,11 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.box{
-  width:100vw;
-  height:100vh;
-}
+
 .blob {
-  position: absolute;
-  z-index: -1;
-  animation: movh 20s ease-in-out infinite;
-  transform-origin: 50% 50%;
+  position: relative;
 }
-@keyframes movh {
+@keyframes mov {
    0%   { transform: scale(1)   translate(60vw, 13vh); }
   38%  { transform: scale(1) translate(50vw, 30vh) rotate(160deg); }
   40%  { transform: scale(1) translate(50vw, 30vh) rotate(160deg); }
@@ -79,11 +67,11 @@ body{
   100% { transform: scale(1)   translate(60vw, 13vh); }
 }
 .blob2 {
-  position: absolute;
-  z-index: -1;
-  animation: moves 20s ease-in-out infinite;
+  position: relative;
+  animation: move 20s ease-in-out infinite;
   transform-origin: 50% 50%;
 }
+
 @keyframes moves {
    0%   { transform: scale(1)   translate(0vw, -10vh); }
   38%  { transform: scale(1) translate(10vw, -20vh) rotate(160deg); }
@@ -93,12 +81,11 @@ body{
   100% { transform: scale(1)   translate(0vw, -10vh); }
 }
 .blob3 {
-  position: absolute;
-  z-index: -1;
+  position: relative;
   animation: moving 20s ease-in-out infinite;
   transform-origin: 50% 50%;
 }
-@keyframes moving {
+@keyframes mov {
    0%   { transform: scale(1)   translate(15vw, 13vh); }
   38%  { transform: scale(1) translate(70vw, 0vh) rotate(160deg); }
   40%  { transform: scale(1) translate(70vw,0vh) rotate(160deg); }
@@ -107,14 +94,23 @@ body{
   100% { transform: scale(1)   translate(15vw, 13vh); }
 }
 .blob4 {
-  position: absolute;
+  position: relative;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+svg text {
+  display: none;
+  position: center;
+  fill: white;
+  font-size: 2em;
 }
-@keyframes move {
-   0%   { transform: scale(1)   translate(-10vw, 0vh); }
-  38%  { transform: scale(1) translate(20vw, 30vh) rotate(160deg); }
-  40%  { transform: scale(1) translate(20vw, 30vh) rotate(160deg); }
-  78%  { transform: scale(1) translate(-70vw, 0vh) rotate(-20deg); }
-  80%  { transform: scale(1) translate(-70vw, 0vh) rotate(-20deg); }
-  100% { transform: scale(1)   translate(-10vw, 0vh); }
+svg g:hover text {
+  display: block;
+  padding: 4em;
 }
+
