@@ -55,62 +55,41 @@ body{
   .sidenav a {font-size: 18px;}
 }
 
-.blob {
-  position: relative;
-}
-@keyframes mov {
-   0%   { transform: scale(1)   translate(60vw, 13vh); }
-  38%  { transform: scale(1) translate(50vw, 30vh) rotate(160deg); }
-  40%  { transform: scale(1) translate(50vw, 30vh) rotate(160deg); }
-  78%  { transform: scale(1) translate(0vw, 20vh) rotate(-20deg); }
-  80%  { transform: scale(1) translate(0vw, 20vh) rotate(-20deg); }
-  100% { transform: scale(1)   translate(60vw, 13vh); }
-}
-.blob2 {
-  position: relative;
-  animation: move 20s ease-in-out infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes moves {
-   0%   { transform: scale(1)   translate(0vw, -10vh); }
-  38%  { transform: scale(1) translate(10vw, -20vh) rotate(160deg); }
-  40%  { transform: scale(1) translate(10vw, -20vh) rotate(160deg); }
-  78%  { transform: scale(1) translate(30vw, 40vh) rotate(-20deg); }
-  80%  { transform: scale(1) translate(30vw, 40vh) rotate(-20deg); }
-  100% { transform: scale(1)   translate(0vw, -10vh); }
-}
-.blob3 {
-  position: relative;
-  animation: moving 20s ease-in-out infinite;
-  transform-origin: 50% 50%;
-}
-@keyframes mov {
-   0%   { transform: scale(1)   translate(15vw, 13vh); }
-  38%  { transform: scale(1) translate(70vw, 0vh) rotate(160deg); }
-  40%  { transform: scale(1) translate(70vw,0vh) rotate(160deg); }
-  78%  { transform: scale(1) translate(0vw, -50vh) rotate(-20deg); }
-  80%  { transform: scale(1) translate(0vw, -50vh) rotate(-20deg); }
-  100% { transform: scale(1)   translate(15vw, 13vh); }
-}
-.blob4 {
-  position: relative;
-}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 50%;
+  height: 50%;
+}
+.box {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  padding: 10px;
+}
+.blob {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 svg text {
   display: none;
   position: center;
   fill: white;
-  font-size: 2em;
+  font-size: 3em;
 }
 svg g:hover text {
   display: block;
-  padding: 4em;
 }
 

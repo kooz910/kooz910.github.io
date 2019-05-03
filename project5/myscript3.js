@@ -43,83 +43,82 @@ $(document).ready(function(){
 function myWeatherInterpretation(){
     var blobwidth = tempmin;
     var svg3 = document.getElementById("svg3");
-  if(blobwidth < "-20")
-        {(svg3.style.width="2%"); (svg3.style.fill="#ebf0fa");}
+   if(blobwidth < "-20")
+        {(svg3.style.width="4%"); (svg3.style.fill="#ebf0fa");}
 
     else if(blobwidth < "-17.5")
-        {(svg3.style.width="4%"); (svg3.style.fill="#ebf0fa");}
+        {(svg3.style.width="8%"); (svg3.style.fill="#ebf0fa");}
     
     else if(blobwidth < "-15")
-        {(svg3.style.width="6%"); (svg3.style.fill="#d6e0f5");}
+        {(svg3.style.width="12%"); (svg3.style.fill="#d6e0f5");}
     
      else if(blobwidth < "-12.5")
-        {(svg3.style.width="8%"); (svg3.style.fill="#d6e0f5");}
+        {(svg3.style.width="16%"); (svg3.style.fill="#d6e0f5");}
 
     else if(blobwidth < "-10")
-         {(svg3.style.width="10%"); (svg3.style.fill="#c2d1f0");}
+         {(svg3.style.width="20%"); (svg3.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-7.5")
-        {(svg3.style.width="12%"); (svg3.style.fill="#c2d1f0");}
+        {(svg3.style.width="24%"); (svg3.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-5")
-        {(svg3.style.width="14%"); (svg3.style.fill="#adc2eb");}
+        {(svg3.style.width="28%"); (svg3.style.fill="#adc2eb");}
     
     else if(blobwidth < "-2.5")
-        {(svg3.style.width="16%"); (svg3.style.fill="#adc2eb");}
+        {(svg3.style.width="32%"); (svg3.style.fill="#adc2eb");}
     
     else if(blobwidth < "0")
-        {(svg3.style.width="18%"); (svg3.style.fill="#99b3e6");}
+        {(svg3.style.width="36%"); (svg3.style.fill="#99b3e6");}
     
     else if(blobwidth < "2.5")
-        {(svg3.style.width="20%"); (svg3.style.fill="#85a3e0");}
+        {(svg3.style.width="40%"); (svg3.style.fill="#85a3e0");}
 
     else if(blobwidth < "5")
-         {(svg3.style.width="22%"); (svg3.style.fill="#7094db");}
+         {(svg3.style.width="44%"); (svg3.style.fill="#7094db");}
 
     else if(blobwidth < "7.5")
-        {(svg3.style.width="24%"); (svg3.style.fill="#5c85d6");}
+        {(svg3.style.width="48%"); (svg3.style.fill="#5c85d6");}
     
     else if(blobwidth < "10")
-       {(svg3.style.width="26%"); (svg3.style.fill="#4775d1");}
+       {(svg3.style.width="52%"); (svg3.style.fill="#4775d1");}
 
     else if(blobwidth < "12.5")
-        {(svg3.style.width="28%"); (svg3.style.fill="#3366cc");}
+        {(svg3.style.width="56%"); (svg3.style.fill="#3366cc");}
     
     else if(blobwidth < "15")
-       {(svg3.style.width="30%"); (svg3.style.fill="#2e5cb8");}
+       {(svg3.style.width="60%"); (svg3.style.fill="#2e5cb8");}
 
     else if(blobwidth < "17.5")
-        {(svg3.style.width="32%"); (svg3.style.fill="#2952a3");}
+        {(svg3.style.width="64%"); (svg3.style.fill="#2952a3");}
 
     else if(blobwidth < "20")
-         {(svg3.style.width="34%"); (svg3.style.fill="#24478f");}
+         {(svg3.style.width="68%"); (svg3.style.fill="#24478f");}
     
     else if(blobwidth < "22.5")
-        {(svg3.style.width="36%"); (svg3.style.fill="#24478f");}
+        {(svg3.style.width="72%"); (svg3.style.fill="#24478f");}
     
     else if(blobwidth < "25")
-        {(svg3.style.width="38%"); (svg3.style.fill="#1f3d7a");}
+        {(svg3.style.width="76%"); (svg3.style.fill="#1f3d7a");}
 
      else if(blobwidth < "27.5")
-        {(svg3.style.width="40%"); (svg3.style.fill="#1f3d7a");}
+        {(svg3.style.width="80%"); (svg3.style.fill="#1f3d7a");}
     
     else if(blobwidth < "30")
-         {(svg3.style.width="42%"); (svg3.style.fill="#193366");}
+         {(svg3.style.width="84%"); (svg3.style.fill="#193366");}
 
     else if(blobwidth < "32.5")
-        {(svg3.style.width="44%"); (svg3.style.fill="#193366");}
+        {(svg3.style.width="88%"); (svg3.style.fill="#193366");}
 
     else if(blobwidth < "35")
-        {(svg3.style.width="46%"); (svg3.style.fill="#0f1f3d");}
+        {(svg3.style.width="92%"); (svg3.style.fill="#0f1f3d");}
 
     else if(blobwidth < "37.5")
-        {(svg3.style.width="48%"); (svg3.style.fill="#0a1429");}
+        {(svg3.style.width="96%"); (svg3.style.fill="#0a1429");}
 
     else if (blobwidth < "40")
-        {(svg3.style.width="50%"); (svg3.style.fill="#050a14");}
+        {(svg3.style.width="100%"); (svg3.style.fill="#050a14");}
     
     } 
-
     });
 $(document).ready(function(){
     $.ajax({

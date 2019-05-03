@@ -18,84 +18,83 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
     var blobwidth = tempmin;   
     var svg2 = document.getElementById("svg2");
-    if(blobwidth < "-20")
-        {(svg2.style.width="2%"); (svg2.style.fill="#ebf0fa");}
+     if(blobwidth < "-20")
+        {(svg2.style.width="4%"); (svg2.style.fill="#ebf0fa");}
 
     else if(blobwidth < "-17.5")
-        {(svg2.style.width="4%"); (svg2.style.fill="#ebf0fa");}
+        {(svg2.style.width="8%"); (svg2.style.fill="#ebf0fa");}
     
     else if(blobwidth < "-15")
-        {(svg2.style.width="6%"); (svg2.style.fill="#d6e0f5");}
+        {(svg2.style.width="12%"); (svg2.style.fill="#d6e0f5");}
     
      else if(blobwidth < "-12.5")
-        {(svg2.style.width="8%"); (svg2.style.fill="#d6e0f5");}
+        {(svg2.style.width="16%"); (svg2.style.fill="#d6e0f5");}
 
     else if(blobwidth < "-10")
-         {(svg2.style.width="10%"); (svg2.style.fill="#c2d1f0");}
+         {(svg2.style.width="20%"); (svg2.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-7.5")
-        {(svg2.style.width="12%"); (svg2.style.fill="#c2d1f0");}
+        {(svg2.style.width="24%"); (svg2.style.fill="#c2d1f0");}
     
     else if(blobwidth < "-5")
-        {(svg2.style.width="14%"); (svg2.style.fill="#adc2eb");}
+        {(svg2.style.width="28%"); (svg2.style.fill="#adc2eb");}
     
     else if(blobwidth < "-2.5")
-        {(svg2.style.width="16%"); (svg2.style.fill="#adc2eb");}
+        {(svg2.style.width="32%"); (svg2.style.fill="#adc2eb");}
     
     else if(blobwidth < "0")
-        {(svg2.style.width="18%"); (svg2.style.fill="#99b3e6");}
+        {(svg2.style.width="36%"); (svg2.style.fill="#99b3e6");}
     
     else if(blobwidth < "2.5")
-        {(svg2.style.width="20%"); (svg2.style.fill="#85a3e0");}
+        {(svg2.style.width="40%"); (svg2.style.fill="#85a3e0");}
 
     else if(blobwidth < "5")
-         {(svg2.style.width="22%"); (svg2.style.fill="#7094db");}
+         {(svg2.style.width="44%"); (svg2.style.fill="#7094db");}
 
     else if(blobwidth < "7.5")
-        {(svg2.style.width="24%"); (svg2.style.fill="#5c85d6");}
+        {(svg2.style.width="48%"); (svg2.style.fill="#5c85d6");}
     
     else if(blobwidth < "10")
-       {(svg2.style.width="26%"); (svg2.style.fill="#4775d1");}
+       {(svg2.style.width="52%"); (svg2.style.fill="#4775d1");}
 
     else if(blobwidth < "12.5")
-        {(svg2.style.width="28%"); (svg2.style.fill="#3366cc");}
+        {(svg2.style.width="56%"); (svg2.style.fill="#3366cc");}
     
     else if(blobwidth < "15")
-       {(svg2.style.width="30%"); (svg2.style.fill="#2e5cb8");}
+       {(svg2.style.width="60%"); (svg2.style.fill="#2e5cb8");}
 
     else if(blobwidth < "17.5")
-        {(svg2.style.width="32%"); (svg2.style.fill="#2952a3");}
+        {(svg2.style.width="64%"); (svg2.style.fill="#2952a3");}
 
     else if(blobwidth < "20")
-         {(svg2.style.width="34%"); (svg2.style.fill="#24478f");}
+         {(svg2.style.width="68%"); (svg2.style.fill="#24478f");}
     
     else if(blobwidth < "22.5")
-        {(svg2.style.width="36%"); (svg2.style.fill="#24478f");}
+        {(svg2.style.width="72%"); (svg2.style.fill="#24478f");}
     
     else if(blobwidth < "25")
-        {(svg2.style.width="38%"); (svg2.style.fill="#1f3d7a");}
+        {(svg2.style.width="76%"); (svg2.style.fill="#1f3d7a");}
 
      else if(blobwidth < "27.5")
-        {(svg2.style.width="40%"); (svg2.style.fill="#1f3d7a");}
+        {(svg2.style.width="80%"); (svg2.style.fill="#1f3d7a");}
     
     else if(blobwidth < "30")
-         {(svg2.style.width="42%"); (svg2.style.fill="#193366");}
+         {(svg2.style.width="84%"); (svg2.style.fill="#193366");}
 
     else if(blobwidth < "32.5")
-        {(svg2.style.width="44%"); (svg2.style.fill="#193366");}
+        {(svg2.style.width="88%"); (svg2.style.fill="#193366");}
 
     else if(blobwidth < "35")
-        {(svg2.style.width="46%"); (svg2.style.fill="#0f1f3d");}
+        {(svg2.style.width="92%"); (svg2.style.fill="#0f1f3d");}
 
     else if(blobwidth < "37.5")
-        {(svg2.style.width="48%"); (svg2.style.fill="#0a1429");}
+        {(svg2.style.width="96%"); (svg2.style.fill="#0a1429");}
 
     else if (blobwidth < "40")
-        {(svg2.style.width="50%"); (svg2.style.fill="#050a14");}
-
+        {(svg2.style.width="100%"); (svg2.style.fill="#050a14");}
+    
     } 
-
-});
+    });
 $(document).ready(function(){
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
