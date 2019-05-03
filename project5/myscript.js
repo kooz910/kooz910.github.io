@@ -113,3 +113,204 @@ $(document).ready(function(){
         $('.e').append('Temp Max: ' + tempmax + '</br>');
     }   
 });
+
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=745044&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=498817&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=2673730&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=3173435&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=2759794&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+ $(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=2950158&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=2911298&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=6355233&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    
+    function myWeatherInterpretation(){
+       function buttonClick(evt) {
+            alert("Temp:" + temp+" "
+                +'Temp Min: ' + tempmin +" "  
+                + "Temp Max:" + tempmax  +" ");
+        }
+    }   
+});
