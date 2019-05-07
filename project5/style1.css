@@ -68,12 +68,12 @@ body{
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 200px 200px 200px;
-  padding: 10px;
+  padding: 5px;
 }
 .blob {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0);
-  padding: 8px;
+  border: 0px solid rgba(0, 0, 0, 0);
+  padding: 0px;
   text-align: center;
   display: flex;
   width: 100%;
@@ -82,14 +82,50 @@ body{
   align-items: center;
   align-content: center;
 }
-
+svg{
+   padding: 20px;
+}
 svg text {
   display: none;
-  position: center;
-  fill: white;
-  font-size: 3em;
+  fill: black;
+  font-size: 4em;
 }
-svg g:hover text {
+svg:hover text {
   display: block;
 }
+p{
+  bottom:5em;
+}
+.temperature{
+  position: absolute;
+  margin:0px;
+  left:62em;
+  top: 8em;
+
+}
+.bar{
+  width:6em;
+  height:1.3em;
+  justify-content: center;
+  margin:0px;
+}
+.max{
+  font-size: 1em;
+  text-align: center;
+  padding-bottom:3em;
+}
+.min{
+  font-size: 1em;
+  text-align: center;
+  padding-bottom:3em;
+}
+.tempmax{
+ position: relative;
+ left: 8em;
+}
+.tempmin{
+  position: absolute;
+}
+
+
 
