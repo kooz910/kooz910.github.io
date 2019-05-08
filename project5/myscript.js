@@ -18,9 +18,9 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#paris').append('Temp: ' + temp + '&#8451'+ '</br>');
-        $('#paris').append('Temp Min: ' + tempmin +'&#8451'+ '</br>');
-        $('#paris').append('Temp Max: ' + tempmax +'&#8451'+ '</br>');
+        $('#paris').append( temp + '&#8451'+ '</br>');
+        $('#paris').append('Min: ' + tempmin +'&#8451'+ '</br>');
+        $('#paris').append('Max: ' + tempmax +'&#8451'+ '</br>');
     
     }   
 });
@@ -295,14 +295,10 @@ $(document).ready(function(){
     }
 });
     $(document).ready(function(){
-  $("#n1").mouseenter(function(){
-    $("#paris").css("display","block");
+  $("#n1").click(function(){
+    $("#paris").toggle();
   });
-  $("#n1").mouseout(function(){
-    $("#paris").css("display","none");
   });
-});
-
     $(document).ready(function(){
   $("#n2").mouseover(function(){
     $("#london").css("display","block");
