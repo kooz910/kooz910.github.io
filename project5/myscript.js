@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#paris1').append(temp + '&#8451'+ '</br>');
+        $('#paris1').append( temp + '&#8451'+ '</br>');
         $('#paris1').append('Min: ' + tempmin +'&#8451'+ '</br>');
         $('#paris1').append('Max: ' + tempmax +'&#8451'+ '</br>');
     
@@ -44,7 +44,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#london1').append(temp + '&#8451'+ '</br>');
+        $('#london1').append( temp + '&#8451'+ '</br>');
         $('#london1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#london1').append('Max: ' + tempmax+ '&#8451'+ '</br>');
             }   
@@ -70,7 +70,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#prague1').append(temp + '&#8451'+ '</br>');
+        $('#prague1').append( temp + '&#8451'+ '</br>');
         $('#prague1').append('Min: ' + tempmin + '&#8451' + '</br>');
         $('#prague1').append('Max: ' + tempmax + '&#8451' + '</br>');
         
@@ -294,4 +294,5 @@ $(document).ready(function(){
         $('#madrid1').append(' Max: ' + tempmax + '&#8451'+ '</br>');
     }
 });
+
 

@@ -1,17 +1,15 @@
 body{
    background-color: #ffffff;
-  padding-left: 60px;
-   padding-right:60px;
-   padding-top:30px;
-   padding-bottom: 0px;
+    padding-left: 6vw;
+   padding-right:6vw;
+   padding-top:3vh;
    font-family: 'Heebo', sans-serif;
-
 }
- .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+.composition{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
 }
 
 .sidenav {
@@ -69,7 +67,10 @@ body{
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 220px 220px 220px;
-  padding: 5px;
+  padding: 0px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
 }
 .blob {
   background-color: rgba(255, 255, 255, 0.8);
@@ -104,50 +105,52 @@ svg{
 }
 
 .temperature{
-  position: absolute;
+  position: relative;
   margin:0px;
-  left:67em;
-  top: 8em;
+  left:60em;
+  top: -39em;
 
 }
 .bar{
-  width:6em;
-  height:1.3em;
+  width:3em;
+  height:.8em;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   margin:0px;
 }
-.max{
-  font-size: 1em;
-  text-align: center;
-  padding-bottom:3em;
-}
+
 .min{
-  font-size: 1em;
-  text-align: center;
-  padding-bottom:3em;
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    top:2em;
+    left: 3.2em;
+    margin-left: -30px;
+    transform: rotate(90deg);
 }
-.tempmax{
- position: relative;
- left: 8em;
-}
-.tempmin{
+
+.temp{
   position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .pic
 {
-  position: absolute;
+  position: relative;
 }
 .all
 { display: grid;
-  position: absolute;
+  position: relative;
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 220px 220px 220px;
-  padding: 10px;
   justify-content: center;
+  top: -40em;
 }
 .title{
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
   padding-top:0vh;
   text-align: center;
   display: flex;
@@ -164,15 +167,15 @@ svg{
 }
 .city{
   position:absolute;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 1.1em;
-  padding-top: 8vh;
+  padding-top: 2.3em;
 }
 #london1{
-  padding-top: 10vh;
+  padding-top:4em;
 }
 #paris1{
-  padding-top: 10vh;
+  padding-top:4em;
 }
 .switch {
   position: relative;
@@ -181,8 +184,9 @@ svg{
   height: 34px;
 }
 .toggle{
-  position:absolute;
-  display: none;
+  position:relative;
+  display: block;
+  top: -40em;
 }
 svg{
    padding: 20px;
@@ -190,13 +194,13 @@ svg{
 .content{
   display: none;
   fill: black;
-  padding-top: 12vh;
+  padding-top: 5em;
   font-size: .9em;
 }
 .title:hover .content {
   display: block;
 }
-.button {
+#button {
   background-color: #000000;
   border: none;
   color: white;
@@ -204,6 +208,32 @@ svg{
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 1em;
+}
+#myText{
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 1.2em;
+  outline: none;
+}
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blink {
+0%{opacity: 0.0;}
+25%{opacity: 1.0;}
+50%{opacity: 10.0;}
+75%{opacity: 1.0;}
+100%{opacity: 0.0;}
 }
 
+.blinker {
+ animation: blink .3s infinite;
+}
+.jdhf {
+ background: blue;
+}

@@ -16,7 +16,7 @@ $(document).ready(function(){
         }
     });
     function myWeatherInterpretation(){
-        $('#hamburg').append('Hamburg'+" "+ temp +'&#8451'+ '</br>');
+        $('#hamburg').append('Hamburg'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
 
@@ -140,70 +140,70 @@ $(document).ready(function(){
 function myWeatherInterpretation(){
     var blobthick = tempmax - tempmin;
     var svg11 = document.getElementById("svg11");
- if(blobthick < "1")
-    {svg11.setAttribute("stroke-width","5");svg11.setAttribute("stroke","#ffffcc");}
+if(blobthick < "1")
+    {svg11.setAttribute("stroke-width","0");svg11.setAttribute("stroke","#ffffcc");}
     
     else if(blobthick < "1.25")
-    {svg11.setAttribute("stroke-width","10");svg11.setAttribute("stroke","#ffffcc");}
+    {svg11.setAttribute("stroke-width","5");svg11.setAttribute("stroke","#ffffcc");}
     
     else if(blobthick < "1.5")
-    {svg11.setAttribute("stroke-width","20");svg11.setAttribute("stroke","#fff7c2");}
+    {svg11.setAttribute("stroke-width","10");svg11.setAttribute("stroke","#fff7c2");}
     
      else if(blobthick < "1.75")
-    {svg11.setAttribute("stroke-width","30");svg11.setAttribute("stroke","#fff0b8");}
+    {svg11.setAttribute("stroke-width","15");svg11.setAttribute("stroke","#fff0b8");}
 
     else if(blobthick < "2")
-    {svg11.setAttribute("stroke-width","40");svg11.setAttribute("stroke","#ffe8ad");}
+    {svg11.setAttribute("stroke-width","20");svg11.setAttribute("stroke","#ffe8ad");}
     
     else if(blobthick < "2.25")
-    {svg11.setAttribute("stroke-width","50");svg11.setAttribute("stroke","#ffe0a3");}
+    {svg11.setAttribute("stroke-width","25");svg11.setAttribute("stroke","#ffe0a3");}
     
     else if(blobthick < "2.5")
-    {svg11.setAttribute("stroke-width","60");svg11.setAttribute("stroke","#ffd999");}
+    {svg11.setAttribute("stroke-width","30");svg11.setAttribute("stroke","#ffd999");}
 
     else if(blobthick < "2.75")
-    {svg11.setAttribute("stroke-width","70");svg11.setAttribute("stroke","#ffd18f");}
+    {svg11.setAttribute("stroke-width","35");svg11.setAttribute("stroke","#ffd18f");}
     
     else if(blobthick < "3")
-    {svg11.setAttribute("stroke-width","80");svg11.setAttribute("stroke","#ffc985");}
+    {svg11.setAttribute("stroke-width","40");svg11.setAttribute("stroke","#ffc985");}
     
     else if(blobthick < "3.25")
-   {svg11.setAttribute("stroke-width","90");svg11.setAttribute("stroke","#ffc27a");}
+   {svg11.setAttribute("stroke-width","45");svg11.setAttribute("stroke","#ffc27a");}
 
     else if(blobthick < "3.5")
-    {svg11.setAttribute("stroke-width","100");svg11.setAttribute("stroke","#ffba70");}
+    {svg11.setAttribute("stroke-width","50");svg11.setAttribute("stroke","#ffba70");}
 
     else if(blobthick < "3.75")
-    {svg11.setAttribute("stroke-width","110");svg11.setAttribute("stroke","#ffb266");}
+    {svg11.setAttribute("stroke-width","55");svg11.setAttribute("stroke","#ffb266");}
     
     else if(blobthick < "4")
-    {svg11.setAttribute("stroke-width","120");svg11.setAttribute("stroke","#ffab5c");}
+    {svg11.setAttribute("stroke-width","60");svg11.setAttribute("stroke","#ffab5c");}
 
     else if(blobthick < "4.25")
-    {svg11.setAttribute("stroke-width","130");svg11.setAttribute("stroke","#ffa352");}
+    {svg11.setAttribute("stroke-width","65");svg11.setAttribute("stroke","#ffa352");}
     
     else if(blobthick < "4.5")
-    {svg11.setAttribute("stroke-width","140");svg11.setAttribute("stroke","#ff9c47");}
+    {svg11.setAttribute("stroke-width","70");svg11.setAttribute("stroke","#ff9c47");}
 
     else if(blobthick < "4.75")
-    {svg11.setAttribute("stroke-width","150");svg11.setAttribute("stroke","#ff943d");}
+    {svg11.setAttribute("stroke-width","75");svg11.setAttribute("stroke","#ff943d");}
 
     else if(blobthick < "5")
-    {svg11.setAttribute("stroke-width","160");svg11.setAttribute("stroke","#ff8c33");}
+    {svg11.setAttribute("stroke-width","80");svg11.setAttribute("stroke","#ff8c33");}
    
     else if(blobthick < "5.25")
-   {svg11.setAttribute("stroke-width","170");svg11.setAttribute("stroke","#ff8529");}
+   {svg11.setAttribute("stroke-width","85");svg11.setAttribute("stroke","#ff8529");}
     
     else if(blobthick < "5.5")
-    {svg11.setAttribute("stroke-width","180");svg11.setAttribute("stroke","#ff7d1f");}
+    {svg11.setAttribute("stroke-width","90");svg11.setAttribute("stroke","#ff7d1f");}
 
      else if(blobthick < "5.75")
-    {svg11.setAttribute("stroke-width","190");svg11.setAttribute("stroke","#ff6e0a");}
+    {svg11.setAttribute("stroke-width","95");svg11.setAttribute("stroke","#ff6e0a");}
 
     else if(blobthick < "6")
-   {svg11.setAttribute("stroke-width","200");svg11.setAttribute("stroke","#ff6600");}
+   {svg11.setAttribute("stroke-width","100");svg11.setAttribute("stroke","#ff6600");}
     
     else if(blobthick > "6")
-   {svg11.setAttribute("stroke-width","200");svg11.setAttribute("stroke","#ff6600");}
+   {svg11.setAttribute("stroke-width","100");svg11.setAttribute("stroke","#ff6600");}
 }
     });
