@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     });
 function myWeatherInterpretation(){
-        $('#prague').append('Prague'+" "+ temp +'&#8451'+ '</br>');
+        $('#prague').append('Prague'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  });
 $(document).ready(function(){

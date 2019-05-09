@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
     
 function myWeatherInterpretation(){
-        $('#milano').append('Milano'+" "+ temp +'&#8451'+ '</br>');
+        $('#milano').append('Milano'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
 

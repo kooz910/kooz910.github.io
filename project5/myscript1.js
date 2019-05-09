@@ -1,4 +1,14 @@
 
+function myFunction() {
+  var x = document.getElementById("toggle");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
 $(document).ready(function(){
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=5fc3025a9aac6c995c1ef39217f09318',  
@@ -17,7 +27,7 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
-        $('#paris').append('Paris'+" "+ temp +'&#8451'+ '</br>');
+        $('#paris').append('Paris'+"  "+ '</br>'+ temp +'&#8451'+ '</br>');
     }   
 });
 $(document).ready(function(){

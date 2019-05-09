@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     });
     function myWeatherInterpretation(){
-        $('#madrid').append('Madrid'+" "+ temp +'&#8451'+ '</br>');
+        $('#madrid').append('Madrid'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
 $(document).ready(function(){

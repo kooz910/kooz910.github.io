@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
-        $('#budapest').append('Budapest'+" "+ temp +'&#8451'+ '</br>');
+        $('#budapest').append('Budapest'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
 

@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
 
 function myWeatherInterpretation(){
-        $('#london').append('London'+" "+ temp +'&#8451'+ '</br>');
+        $('#london').append('London'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  });
 $(document).ready(function(){

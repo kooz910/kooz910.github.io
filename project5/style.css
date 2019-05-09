@@ -48,6 +48,12 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 div.all
 {
   display: grid;
@@ -70,22 +76,13 @@ div.all
 }
 
 .content{
-  display: none;
-}
-.center {
+  font-size:.9em; 
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.city{
-  display: block;
-  position:center;
-}
-img{
-  margin-top: 4em;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  position: relative;
 }
 
+.city{
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+}

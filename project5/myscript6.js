@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
  
 function myWeatherInterpretation(){
-        $('#petersburg').append('St Petersburg'+" "+ temp +'&#8451'+ '</br>');
+        $('#petersburg').append('St Petersburg'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
  $(document).ready(function(){

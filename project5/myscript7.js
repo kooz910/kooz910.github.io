@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
     
 function myWeatherInterpretation(){
-        $('#stockholm').append('Stockholm'+" "+ temp +'&#8451'+ '</br>');
+        $('#stockholm').append('Stockholm'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  }); 
 

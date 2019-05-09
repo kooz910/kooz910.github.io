@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
     
 function myWeatherInterpretation(){
-        $('#amsterdam').append('Amsterdam'+" "+ temp +'&#8451'+ '</br>');
+        $('#amsterdam').append('Amsterdam'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  });
 

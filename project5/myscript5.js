@@ -18,7 +18,7 @@ $(document).ready(function(){
     
 
 function myWeatherInterpretation(){
-        $('#istanbul').append('Istanbul'+" "+ temp +'&#8451'+ '</br>');
+        $('#istanbul').append('Istanbul'+" "+ '</br>'+ temp +'&#8451'+ '</br>');
        }
  });
 

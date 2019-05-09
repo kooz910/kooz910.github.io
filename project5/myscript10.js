@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
     
     function myWeatherInterpretation(){
-        $('#berlin').append('Berlin'+" "+ temp +'&#8451'+ '</br>');
+        $('#berlin').append('Berlin'+" "+ '</br>'+temp +'&#8451'+ '</br>');
        }
  }); 
 $(document).ready(function(){
