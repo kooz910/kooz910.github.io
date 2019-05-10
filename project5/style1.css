@@ -9,7 +9,7 @@ body{
   margin: auto;
   width: 100%;
   height: 100%;
-  padding: 0px;
+  padding-top: 3em;
 }
 
 .sidenav {
@@ -84,11 +84,7 @@ body{
   align-content: center;
   position: relative;
 }
-svg{
-  overflow:auto;
-  align-content: center;
-  text-align: center;
-}
+
 .blob text {
   opacity: 0;
   fill: black;
@@ -98,6 +94,7 @@ svg{
   left: 50%;
   transform:translateX(-50%);
   text-align: center;
+  justify-content: center;
   transition: all 0.5s ease;
 }
 .blob:hover text {
@@ -146,17 +143,17 @@ svg{
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 220px 220px 220px;
   justify-content: center;
-  top: -40em;
+  top: -41.6em;
 }
 .title{
   background-color: rgba(255, 255, 255, 0.8);
   border: 0px solid rgba(0, 0, 0, 0);
-  padding-top:0vh;
+  padding:20px;
   text-align: center;
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .center {
@@ -168,7 +165,7 @@ svg{
 .city{
   position:absolute;
   font-weight: bolder;
-  font-size: 1.1em;
+  font-size: 1.2em;
   padding-top: 2.3em;
 }
 #london1{
@@ -186,7 +183,8 @@ svg{
 .toggle{
   position:relative;
   display: block;
-  top: -40em;
+  top: -42em;
+  border: 1px black;
 }
 svg{
    padding: 20px;
@@ -194,8 +192,9 @@ svg{
 .content{
   display: none;
   fill: black;
+  font-weight: bolder;
   padding-top: 5em;
-  font-size: .9em;
+  font-size: 1em;
 }
 .title:hover .content {
   display: block;
@@ -220,20 +219,64 @@ svg{
   font-size: 1.2em;
   outline: none;
 }
-.blinking{
-    animation:blinkingText 0.8s infinite;
-}
-@keyframes blink {
-0%{opacity: 0.0;}
-25%{opacity: 1.0;}
-50%{opacity: 10.0;}
-75%{opacity: 1.0;}
-100%{opacity: 0.0;}
+svg{
+  overflow:auto;
+  align-content: center;
+  text-align: center;
 }
 
-.blinker {
- animation: blink .3s infinite;
+#a1{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
 }
-.jdhf {
- background: blue;
+#a2{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
 }
+#a3{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a4{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a5{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a6{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a7{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a8{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a9{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a10{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a11{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+#a12{
+  -webkit-animation: pulsate;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+  0% { -webkit-transform: scale(0); }
+  50% { -webkit-transform: scale(.9)}
+  100% { -webkit-transform: scale(0); opacity: 50%; }
+}
+
+

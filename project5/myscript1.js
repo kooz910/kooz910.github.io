@@ -1,14 +1,4 @@
-     $("*").on("click","#button", function(e){
-e.stopPropagation();
-var f=$(".blinker").length;
-if(f>0){
-$("svg1").removeClass("blinker");
-}
-else {
-$("svg1").addClass("blinker");
-}
-});
-
+   
  var time = new Date().getTime();
      function refresh() {
          if(new Date().getTime() - time >= 120000) 
@@ -30,6 +20,101 @@ function myFunction() {
   };
 }
 
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=5fc3025a9aac6c995c1ef39217f09318',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+
+function myWeatherInterpretation(){
+ var value = temp;
+    var svg1 = document.getElementById("a1");
+    if(value < "-20")
+        $("#a1").css("animation-duration","1s");
+
+    else if(value < "-17.5")
+        $("#a1").css("animation-duration","2s");
+    
+    else if(value < "-15")
+        $("#a1").css("animation-duration","3s");
+    
+     else if(value < "-12.5")
+         $("#a1").css("animation-duration","4s");
+
+    else if(value < "-10")
+         $("#a1").css("animation-duration","5s");
+    
+    else if(value < "-7.5")
+       $("#a1").css("animation-duration","6s");
+    
+    else if(value < "-5")
+       $("#a1").css("animation-duration","7s");
+    
+    else if(value < "-2.5")
+        $("#a1").css("animation-duration","8s");
+    
+    else if(value < "0")
+       $("#a1").css("animation-duration","9s");
+    
+    else if(value < "2.5")
+        $("#a1").css("animation-duration","10s");
+
+    else if(value < "5")
+        $("#a1").css("animation-duration","11s");
+
+    else if(value < "7.5")
+         $("#a1").css("animation-duration","12s");
+
+    else if(value < "12.5")
+         $("#a1").css("animation-duration", "14s");
+    else if(value < "15")
+         $("#a1").css("animation-duration","15s");
+    
+    else if(value < "17.5")
+         $("#a1").css("animation-duration","16s");
+
+    else if(value < "20")
+         $("#a1").css("animation-duration","17s");
+    
+    else if(value < "22.5")
+         $("#a1").css("animation-duration","18s");
+        
+    else if(value < "25")
+         $("#a1").css("animation-duration","19s");
+
+     else if(value < "27.5")
+         $("#a1").css("animation-duration","20s");
+    
+    else if(value < "30")
+         $("#a1").css("animation-duration","21s");
+
+    else if(value < "32.5")
+         $("#a1").css("animation-duration","22s");
+
+    else if(value < "35")
+         $("#a1").css("animation-duration","23s");
+
+    else if(value < "37.5")
+         $("#a1").css("animation-duration","24s");
+
+    else if (value < "40")
+         $("#a1").css("animation-duration","25s");
+
+    else if (value > "40")
+         $("#a1").css("animation-duration","25s");
+    } 
+    });
 $(document).ready(function(){
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=6455259&units=metric&APPID=5fc3025a9aac6c995c1ef39217f09318',  
@@ -238,3 +323,5 @@ function myWeatherInterpretation(){
    {svg1.setAttribute("stroke-width","100");svg1.setAttribute("stroke","#ff6600");}
 }
     });
+
+

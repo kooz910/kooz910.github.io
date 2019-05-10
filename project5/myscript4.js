@@ -38,6 +38,101 @@ $(document).ready(function(){
         }
     });
     function myWeatherInterpretation(){
+ var value = temp;
+    var svg = document.getElementById("a4");
+    if(value < "-20")
+        $("#a4").css("animation-duration","1s");
+
+    else if(value < "-17.5")
+        $("#a4").css("animation-duration","2s");
+    
+    else if(value < "-15")
+        $("#a4").css("animation-duration","3s");
+    
+     else if(value < "-12.5")
+         $("#a4").css("animation-duration","4s");
+
+    else if(value < "-10")
+         $("#a4").css("animation-duration","5s");
+    
+    else if(value < "-7.5")
+       $("#a4").css("animation-duration","6s");
+    
+    else if(value < "-5")
+       $("#a4").css("animation-duration","7s");
+    
+    else if(value < "-2.5")
+        $("#a4").css("animation-duration","8s");
+    
+    else if(value < "0")
+       $("#a4").css("animation-duration","9s");
+    
+    else if(value < "2.5")
+        $("#a4").css("animation-duration","10s");
+
+    else if(value < "5")
+        $("#a4").css("animation-duration","11s");
+
+    else if(value < "7.5")
+         $("#a4").css("animation-duration","12s");
+
+    else if(value < "12.5")
+         $("#a4").css("animation-duration", "14s");
+    else if(value < "15")
+         $("#a4").css("animation-duration","15s");
+    
+    else if(value < "17.5")
+         $("#a4").css("animation-duration","16s");
+
+    else if(value < "20")
+         $("#a4").css("animation-duration","17s");
+    
+    else if(value < "22.5")
+         $("#a4").css("animation-duration","18s");
+        
+    else if(value < "25")
+         $("#a4").css("animation-duration","19s");
+
+     else if(value < "27.5")
+         $("#a4").css("animation-duration","20s");
+    
+    else if(value < "30")
+         $("#a4").css("animation-duration","21s");
+
+    else if(value < "32.5")
+         $("#a4").css("animation-duration","22s");
+
+    else if(value < "35")
+         $("#a4").css("animation-duration","23s");
+
+    else if(value < "37.5")
+         $("#a4").css("animation-duration","24s");
+
+    else if (value < "40")
+         $("#a4").css("animation-duration","25s");
+
+    else if (value > "40")
+         $("#a4").css("animation-duration","25s");
+    } 
+    });
+
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=2759794&units=metric&APPID=77baefed72187962b387fc9ac3e1a230',  
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
     var blobwidth = tempmin;
     var svg4 = document.getElementById("svg4");
    if(blobwidth < "-20")

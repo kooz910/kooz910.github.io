@@ -8,7 +8,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp1 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#paris1').append( temp + '&#8451'+ '</br>');
+        $('#paris1').append( temp1 + '&#8451'+ '</br>');
         $('#paris1').append('Min: ' + tempmin +'&#8451'+ '</br>');
         $('#paris1').append('Max: ' + tempmax +'&#8451'+ '</br>');
     
@@ -34,7 +34,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp2 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -44,7 +44,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#london1').append( temp + '&#8451'+ '</br>');
+        $('#london1').append( temp2 + '&#8451'+ '</br>');
         $('#london1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#london1').append('Max: ' + tempmax+ '&#8451'+ '</br>');
             }   
@@ -60,7 +60,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp3 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -70,7 +70,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#prague1').append( temp + '&#8451'+ '</br>');
+        $('#prague1').append( temp3 + '&#8451'+ '</br>');
         $('#prague1').append('Min: ' + tempmin + '&#8451' + '</br>');
         $('#prague1').append('Max: ' + tempmax + '&#8451' + '</br>');
         
@@ -86,7 +86,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp4 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -96,7 +96,7 @@ $(document).ready(function(){
     
     function myWeatherInterpretation(){
     
-        $('#amesterdam1').append(temp + '&#8451'+ '</br>');
+        $('#amesterdam1').append(temp4 + '&#8451'+ '</br>');
         $('#amesterdam1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#amesterdam1').append('Max: ' + tempmax + '&#8451'+ '</br>');
     }   
@@ -111,7 +111,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp5 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -121,7 +121,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#istanbul1').append( temp + '&#8451'+ '</br>');
+        $('#istanbul1').append( temp5 + '&#8451'+ '</br>');
         $('#istanbul1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#istanbul1').append('Max: ' + tempmax + '&#8451'+ '</br>');
         } 
@@ -135,7 +135,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp6 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -145,7 +145,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#petersburg1').append(temp + '&#8451'+ '</br>');
+        $('#petersburg1').append(temp6 + '&#8451'+ '</br>');
         $('#petersburg1').append('Min: ' + tempmin + '&#8451' + '</br>');
         $('#petersburg1').append('Max: ' + tempmax + '&#8451' + '</br>');
     }   
@@ -159,7 +159,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp7 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -169,7 +169,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#stockholm1').append(temp + '&#8451'+ '</br>');
+        $('#stockholm1').append(temp7 + '&#8451'+ '</br>');
         $('#stockholm1').append('Min: ' + tempmin + '&#8451' + '</br>');
         $('#stockholm1').append('Max: ' + tempmax + '&#8451'+ '</br>');
         }  
@@ -183,7 +183,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp8 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -193,7 +193,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#milano1').append( temp + '&#8451'+ '</br>');
+        $('#milano1').append( temp8 + '&#8451'+ '</br>');
         $('#milano1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#milano1').append('Max: ' + tempmax + '&#8451'+ '</br>');
     }   
@@ -207,7 +207,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp9 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -217,7 +217,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#budapest1').append(temp + '&#8451'+ '</br>');
+        $('#budapest1').append(temp9 + '&#8451'+ '</br>');
         $('#budapest1').append('Min: ' + tempmin + '&#8451'+ '</br>');
         $('#budapest1').append('Max: ' + tempmax + '&#8451'+ '</br>');
     }   
@@ -231,7 +231,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp10 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -241,7 +241,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#berlin1').append(temp + '&#8451'+ '</br>');
+        $('#berlin1').append(temp10 + '&#8451'+ '</br>');
         $('#berlin1').append( 'Min: ' + tempmin + '&#8451'+ '</br>');
         $('#berlin1').append(' Max: ' + tempmax + '&#8451'+ '</br>');
     }   
@@ -255,7 +255,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp11 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -265,7 +265,7 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#hamburg1').append( temp + '&#8451'+ '</br>');
+        $('#hamburg1').append( temp11 + '&#8451'+ '</br>');
         $('#hamburg1').append(' Min: ' + tempmin + '&#8451'+ '</br>');
         $('#hamburg1').append(' Max: ' + tempmax + '&#8451'+ '</br>');
     }   
@@ -279,7 +279,7 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             tempmin = results.main.temp_min;
             tempmax = results.main.temp_max;
-            temp = results.main.temp;
+            temp12 = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             myWeatherInterpretation();
@@ -289,10 +289,9 @@ $(document).ready(function(){
     
      function myWeatherInterpretation(){
     
-        $('#madrid1').append( temp + '&#8451'+ '</br>');
+        $('#madrid1').append( temp12 + '&#8451'+ '</br>');
         $('#madrid1').append(' Min: ' + tempmin + '&#8451'+ '</br>');
         $('#madrid1').append(' Max: ' + tempmax + '&#8451'+ '</br>');
     }
 });
-
 
